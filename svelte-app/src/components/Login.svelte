@@ -1,0 +1,93 @@
+<script>
+  import { goto } from '$app/navigation';
+
+  let username = '';
+  let password = '';
+  let message = ''; // Initialize response message variable
+
+
+  // Function to handle login
+  async function handleLogin() {
+    try {
+      const response = await fetch('http://127.0.0.1:5000/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }), // Send the username and password
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // Authentication successful
+        message = data.message;
+        goto('/dashboard'); // Redirect to the dashboard
+      } else {
+        // Authentication failed
+        message = data.message; //'Authentication failed. Please check your credentials.';
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      message = 'An error occurred while trying to log in. Please try again later.';
+    }
+  }
+</script>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: column; /* Center vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* 100% viewport height to fill the entire screen */
+  }
+
+  input{
+    border: solid black 1px;
+  } 
+
+  main {
+  text-align: center;
+  padding: 1em;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ff3e00;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+@media (min-width: 640px) {
+  main {
+    max-width: none;
+  }
+}
+
+  .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 4px;
+  }
+</style>
+
+<main class="center-container">
+  <h1>LOGIN</h1>
+<!-- Display the message if it's not empty -->
+  {#if message}
+    <p class='error-message'>{message}</p>
+  {/if}
+  <form>
+    <label for="username">Email/Phone</label>
+    <input type="text" id="username" bind:value={username} />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" bind:value={password} />
+    <br>
+    <button on:click={handleLogin}>Login</button>
+  </form>
+</main>
+

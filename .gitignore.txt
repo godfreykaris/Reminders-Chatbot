@@ -1,0 +1,2 @@
+rmvenv/
+svelte-app/node_modules
