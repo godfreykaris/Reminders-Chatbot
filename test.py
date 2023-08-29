@@ -1,30 +1,10 @@
 
 
-import requests
-import json
-
-# URL of the API endpoint
-url = "http://localhost:5000/api/retrieve_goal_data"
-
-# Template message
-template_message = "Did you do your Yoga?"
-
-# JSON payload
-payload = {"template_message": template_message}
-
-# Send a POST request
-response = requests.post(url, json=payload)
-
-# Check if the request was successful (status code 200)
-if response.status_code == 200:
-    data = response.json()
-    generated_message = data.get('user_message')
-    print(f"Generated Message: {generated_message}")
-else:
-    print(f"Error: {response.status_code}, {response.json()}")
+# import requests
+# import json
 
 # # URL of the API endpoint
-# url = "http://localhost:5000/api/chat/generate_message"
+# url = "/api/retrieve_goal_data"
 
 # # Template message
 # template_message = "Did you do your Yoga?"
@@ -44,7 +24,27 @@ else:
 #     print(f"Error: {response.status_code}, {response.json()}")
 
 # # URL of the API endpoint
-# url = "http://localhost:5000/api/chat/chat_with_user"
+# url = "/api/chat/generate_message"
+
+# # Template message
+# template_message = "Did you do your Yoga?"
+
+# # JSON payload
+# payload = {"template_message": template_message}
+
+# # Send a POST request
+# response = requests.post(url, json=payload)
+
+# # Check if the request was successful (status code 200)
+# if response.status_code == 200:
+#     data = response.json()
+#     generated_message = data.get('user_message')
+#     print(f"Generated Message: {generated_message}")
+# else:
+#     print(f"Error: {response.status_code}, {response.json()}")
+
+# # URL of the API endpoint
+# url = "/api/chat/chat_with_user"
 
 # # Template message
 # template_message = "Did you do your Yoga?"
@@ -65,7 +65,7 @@ else:
 
 
 # # Define the URL of your Flask application
-# url = 'http://localhost:5000/api/chat/generate_report'
+# url = '/api/chat/generate_report'
 
 # # Sample user data for the "Yoga" goal
 # user_data = {
@@ -134,37 +134,37 @@ else:
 #     print(response.json())
 
 
-# import logging
-# import requests
+import logging
+import requests
 
-# import os
+import os
 
-# dir_path = os.path.dirname(os.path.realpath(__file__))
-# filename = os.path.join(dir_path, 'cron_script.log')
+dir_path = os.path.dirname(os.path.realpath(__file__))
+filename = os.path.join(dir_path, 'cron_script.log')
 
-# logging.basicConfig(filename=filename, level=logging.INFO)
+logging.basicConfig(filename=filename, level=logging.INFO)
 
-# try:
-#     # Define the URL of your Flask application
-#     url = "http://localhost:5000/api/send_message"  # Update the URL as needed  
+try:
+    # Define the URL of your Flask application
+    url = "/api/send_message"  # Update the URL as needed  
 
-#     # Define the data to be sent in the request's JSON body
-#     data = {
-#         "recipient": "+254759741544",  # Replace with the recipient's phone number
-#         "message": "Hello, this is a test message from  reminders app",  # Replace with your message
-#         "type": "whatsapp"  # Specify the message type (sms or whatsapp)
-#     }   
+    # Define the data to be sent in the request's JSON body
+    data = {
+        "recipient": "+254759741544",  # Replace with the recipient's phone number
+        "message": "Hello, this is a test message from  reminders app",  # Replace with your message
+        "type": "whatsapp"  # Specify the message type (sms or whatsapp)
+    }   
 
-#     # Send an HTTP POST request to the /api/send_message route
-#     response = requests.post(url, json=data)    
+    # Send an HTTP POST request to the /api/send_message route
+    response = requests.post(url, json=data)    
 
-#     # Print the response from the server
-#     print(response.status_code)  # Print the HTTP status code
-#     print(response.json())  # Print the JSON response from the server
+    # Print the response from the server
+    print(response.status_code)  # Print the HTTP status code
+    print(response.json())  # Print the JSON response from the server
 
-#     logging.info('Script executed successfully')
-# except Exception as e:
-#     logging.error(f'Script encountered an error: {str(e)}')
+    logging.info('Script executed successfully')
+except Exception as e:
+    logging.error(f'Script encountered an error: {str(e)}')
 
 
 
