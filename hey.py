@@ -1,7 +1,7 @@
 import requests
 
 # Define the URL of your Flask application
-url = "http://localhost:5000/api/send_message"  # Update the URL as needed
+url = "/api/send_message"  # Update the URL as needed
 
 # Define the data to be sent in the request's JSON body
 data = {

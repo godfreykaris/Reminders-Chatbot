@@ -22,7 +22,7 @@ def main(args):
 
         # retrieve the goal
         # Define the URL of your Flask application
-        url = "http://localhost:5000/api/user/retrieve_goal"  # Update the URL as needed  
+        url = "/api/user/retrieve_goal"  # Update the URL as needed  
 
         # Define the data to be sent in the request's JSON body
         data = {
@@ -41,7 +41,7 @@ def main(args):
 
         # Generate the message
         # URL of the API endpoint
-        url = "http://localhost:5000/api/chat/generate_message"       
+        url = "/api/chat/generate_message"       
 
         # Template message
         template_message = f"Did you do your {goal_data['title']}?"        
@@ -60,7 +60,7 @@ def main(args):
             print(f"Error: {response.status_code}, {response.json()}")
 
         # Define the URL of your Flask application
-        url = "http://localhost:5000/api/send_message"  # Update the URL as needed  
+        url = "/api/send_message"  # Update the URL as needed  
 
         # Define the data to be sent in the request's JSON body
         data = {
