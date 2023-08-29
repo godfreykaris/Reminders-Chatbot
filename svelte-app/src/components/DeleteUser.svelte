@@ -1,4 +1,5 @@
 <script>
+    import {push} from 'svelte-spa-router';
 
     let users = [];
 
@@ -8,7 +9,7 @@
     let success_message = '';
 
     async function fetchUsers() {
-        const response = await fetch('http://localhost:5000/get_users');
+        const response = await fetch('/get_users');
 
         if(response.ok){
             users = await response.json();
@@ -35,7 +36,7 @@
         if(!confirm_delete)
             return
 
-        const response = await fetch('http://localhost:5000/delete_user', {
+        const response = await fetch('/delete_user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -64,6 +65,7 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Delete User</h1>
 
     {#if error_message != ''}

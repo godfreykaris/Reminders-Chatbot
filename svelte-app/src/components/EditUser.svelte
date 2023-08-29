@@ -1,4 +1,6 @@
 <script>
+    import {push} from 'svelte-spa-router';
+
     let user = {};
 
     let user_id = 6;
@@ -9,7 +11,7 @@
     let success_message = '';
 
     async function fetchUser(user_id) {
-        const response = await fetch(`http://localhost:5000/get_user/${user_id}`);
+        const response = await fetch(`/get_user/${user_id}`);
         
         if (user.hasOwnProperty('message') && user.message === 'User not found' || user.message === 'Failed to fecth user') {
         // Handle the case where the user is not found
@@ -27,7 +29,7 @@
     }
 
     async function EditUser() {
-        const response = await fetch('http://localhost:5000/edit_user', {
+        const response = await fetch('/edit_user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -61,6 +63,8 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button>
+    
     <h1>Edit User</h1>
     <button on:click= {() => fetchUser(user_id)}>Fetch User</button>
     

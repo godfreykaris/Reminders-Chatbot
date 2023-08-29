@@ -14,6 +14,8 @@
   import DeleteUser from './components/DeleteUser.svelte';
   import Notfound from  './components/Notfound.svelte';
 
+  import ViewGoals from './components/ViewGoals.svelte';
+
   const routes = {
     
     '/': Landing,
@@ -29,6 +31,8 @@
     '/addgoal' : AddGoal,
     '/editgoal' : EditGoal,
     '/deletegoal' : DeleteGoal,
+
+    '/viewgoals' : ViewGoals,
 
     '*' : Notfound,
 }

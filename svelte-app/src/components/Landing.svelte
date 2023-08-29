@@ -17,11 +17,5 @@
   <h1>Reminders App</h1>
   <button on:click={() => push('/login')}>Login</button>
   <button on:click={() => push('/register')}>Register</button>
-  <button on:click={() => push('/edituser')}>EditUser</button>
-  <button on:click={() => push('/deleteuser')}>DeleteUser</button>
-
-  <button on:click={() => push('/addgoal')}>AddGoal</button>
-  <button on:click={() => push('/editgoal')}>EditGoal</button>
-  <button on:click={() => push('/deletegoal')}>DeleteGoal</button>
 
 </div>

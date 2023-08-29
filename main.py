@@ -1,6 +1,6 @@
 # Import the necessary Flask modules
 from flask import Flask, jsonify, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import pytz
 import requests
 
@@ -27,7 +27,17 @@ from datetime import time
 app = Flask(__name__)
 
 # Enable Cross-Origin Resource Sharing (CORS) to allow requests from different origins
-CORS(app)
+#CORS(app, supports_credentials=True)
+
+# Helper function to return a response with status code and CORS headers
+def prepare_response(response):
+    response.headers.add("Access-Control-Allow-Origin", "https://8080-godfreykaris-reminders-m6omnjr95cv.ws-eu104.gitpod.io")
+    response.headers.add("Access-Control-Allow-Credentials", 'true')
+    response.headers.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")  # Add the allowed HTTP methods
+    response.headers.add("Access-Control-Allow-Headers", "Content-Type, Authorization")  # Add the allowed headers
+    return response
+
+
 
 # Initialize the database connection using the configuration from 'config.json'
 database_initializer = DatabaseInitializer('config.json')
@@ -100,7 +110,7 @@ def webhook():
         response = MessagingResponse()
 
         # Generate a response from ChatGPT
-        chatgpt_url = "http://localhost:5000/api/chat/chat_with_user"
+        chatgpt_url = "/api/chat/chat_with_user"
     
         # JSON payload
         chatgpt_payload = {"user_input": incoming_message}
@@ -272,10 +282,12 @@ def serialize_time_to_str(time_obj):
     return time_obj
 
 #get timezones
-@app.route('/get_timezones', methods=['GET'])
+@app.route('/api/get_timezones', methods=['GET'])
 def get_timezones():
     timezones = pytz.all_timezones
-    return jsonify(timezones)
+    response = jsonify(timezones)
+    response = prepare_response(response)
+    return response
 
 #validate timezones
 def validate_timezone(time_zone):
@@ -286,13 +298,23 @@ def validate_timezone(time_zone):
         return False
 
 # Delete a goal
-@app.route('/delete_goal', methods=['POST'])
+@app.route('/delete_goal', methods=['POST', 'OPTIONS'])
 def delete_goal():
+
+    if request.method == 'OPTIONS':
+       response.headers.add("Access-Control-Allow-Origin", "https://8080-godfreykaris-reminders-m6omnjr95cv.ws-eu104.gitpod.io")
+       response.headers.add("Access-Control-Allow-Credentials", 'true')
+       response.headers.add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")  # Add the allowed HTTP methods
+       response.headers.add("Access-Control-Allow-Headers", "Content-Type, Authorization")  # Add the allowed headers
+       return response
+
     data = request.get_json()
     goal_id = data.get('id')
     
     if not isinstance(goal_id, int) or goal_id <= 0:
-        return jsonify(message="Invalid goal ID"), 400
+        response = jsonify(message="Invalid goal ID")
+        response = prepare_response(response)
+        return response , 400
     
     try:
         conn = database_initializer.get_database_connection()
@@ -309,12 +331,16 @@ def delete_goal():
         cursor.close()
         conn.close()
 
-        return jsonify(message="Goal deleted successfully"), 200
+        response = jsonify(message="Goal deleted successfully")
+        response = prepare_response(response)
+        return response , 200
     
     except psycopg2.Error as e:
         # Log the error for debugging
         print(e)
-        return jsonify(message="Failed to delete goal"), 500
+        response = jsonify(message="Failed to delete goal")
+        response = prepare_response(response)
+        return response , 500
 
 @app.route('/get_user/<int:user_id>', methods=['GET'])
 def get_user(user_id):
@@ -666,12 +692,14 @@ def receive_message():
 
 #fetch goals
 #fetch goals
-@app.route('/get_goals', methods=['GET'])
+@app.route('/api/get_goals', methods=['GET'])
 def get_goals():
     user_id = 6
     
     if user_id is None:
-        return jsonify(message="User ID is required"), 400
+        response = jsonify(message="User ID is required")
+        response = prepare_response(response)
+        return response , 400
     
     try:
         conn = database_initializer.get_database_connection()
@@ -702,15 +730,19 @@ def get_goals():
             }
             goals_dict_list.append(goal_dict)
         
-        return jsonify(goals_dict_list), 200
+        response = jsonify(goals_dict_list)
+        response = prepare_response(response)
+        return response , 200
     
     except psycopg2.Error as e:
         # Log the error for debugging
         print(e)
-        return jsonify(message="Failed to fetch goals"), 500
+        response = jsonify(message="Failed to fetch goals")
+        response = prepare_response(response)
+        return response , 500
     
 
 # Start the Flask application in debug mode if executed as the main script
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='localhost', port='8000', debug=True)
 

@@ -1,4 +1,6 @@
 <script>
+    import { BASE_URL } from '../config.js';
+
     let report_frequency = 1;
     let goal_title = '';
     let goal_description = '';
@@ -13,8 +15,20 @@
     let error_message = '';
     let success_message = '';
 
+    
     async function fetch_timezones(){
-        const response = await fetch('http://localhost:5000/get_timezones');
+        let headers = new Headers();
+
+        headers.append('Accept', 'application/json');
+
+        const myInit = {
+          method: "GET",
+          mode: 'cors',
+          credentials: 'include',
+          headers: headers,
+        };
+
+        const response = await fetch(`${BASE_URL}/api/get_timezones`, myInit);
         
         if(response.ok){
             timezones = await response.json();
@@ -36,7 +50,7 @@
             contact_choice
         };
     
-        const response = await fetch('http://localhost:5000/add_goal', {
+        const response = await fetch('/add_goal', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -65,6 +79,7 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Add a Goal</h1>
     {#if error_message != ''}
         <p class="error-message">{error_message}</p>

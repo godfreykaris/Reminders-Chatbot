@@ -1,4 +1,13 @@
 <script>
+<<<<<<< HEAD
+  import { push } from "svelte-spa-router";
+  
+=======
+
+  import { BASE_URL } from '../config.js';
+
+
+>>>>>>> reminders/trunk
   let name =   '' ;
   let email = '';
   let phone = '';
@@ -10,10 +19,10 @@
 
   async function handleRegister() {
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/register', {
+      const response = await fetch(`${BASE_URL}/api/register`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json',          
         },
         body: JSON.stringify({
           phone: phone,
@@ -21,6 +30,7 @@
           email: email,
           password: password,
         }),
+        credentials: "include",
       });
 
       const data = await response.json();
@@ -30,17 +40,20 @@
         // Registration successful
         console.log('User registered successfully');
         success_message = data.message; // Set the error message from the response
+        error_message = "";
 
       } 
       else 
       {
         // Registration failed, handle errors
         error_message = data.message; // Set the error message from the response
+        success_message = "";
         console.error('Registration failed:', message);
       }
     } catch (error) {
       // Network or other error occurred
       error_message = 'An error occurred while registering.';
+      success_message = "";
       console.error('Error:', error);
     }
   }
@@ -95,12 +108,14 @@ h1 {
 
 <main class="center-container">
   <h1> REGISTER </h1>
+  <button on:click={() => push('/')}>Home</button>
   <!-- Display the message if it's not empty -->
   {#if error_message}
     <p class="error-message">{error_message}</p>
   {:else}
         <p class="success-message">{success_message}</p>
   {/if}
+  
   <form>
     <label for="name">Name</label>
     <input type="name" id="name" bind:value={name} />
@@ -119,6 +134,8 @@ h1 {
 
     <br>
     <button on:click={handleRegister}>Register</button>  
+    <br>
+    <a on:click={() => push('/login')}>Already a member?</a>
 </form>
 </main>
 

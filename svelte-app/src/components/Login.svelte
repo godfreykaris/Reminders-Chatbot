@@ -1,5 +1,5 @@
 <script>
-  import { goto } from '$app/navigation';
+  import {push} from 'svelte-spa-router';
 
   let username = '';
   let password = '';
@@ -22,7 +22,7 @@
       if (response.ok) {
         // Authentication successful
         message = data.message;
-        goto('/dashboard'); // Redirect to the dashboard
+       push('/dashboard') // Redirect to the dashboard
       } else {
         // Authentication failed
         message = data.message; //'Authentication failed. Please check your credentials.';
@@ -75,19 +75,20 @@ h1 {
 </style>
 
 <main class="center-container">
+  <button on:click={() => push('/')}>Home</button> 
   <h1>LOGIN</h1>
 <!-- Display the message if it's not empty -->
   {#if message}
     <p class='error-message'>{message}</p>
   {/if}
-  <form>
+  <form on:submit|preventDefault={handleLogin}> 
     <label for="username">Email/Phone</label>
     <input type="text" id="username" bind:value={username} />
 
     <label for="password">Password</label>
     <input type="password" id="password" bind:value={password} />
     <br>
-    <button on:click={handleLogin}>Login</button>
+    <button type="submit">Login</button>
   </form>
 </main>
 
