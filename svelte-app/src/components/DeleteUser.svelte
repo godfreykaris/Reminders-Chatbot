@@ -1,4 +1,5 @@
 <script>
+    import {push} from 'svelte-spa-router';
 
     let users = [];
 
@@ -64,6 +65,7 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Delete User</h1>
 
     {#if error_message != ''}

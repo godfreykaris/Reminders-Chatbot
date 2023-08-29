@@ -1,4 +1,6 @@
 <script>
+    import {push} from 'svelte-spa-router';
+
     let goals = [];
 
     let timezones = [];
@@ -67,6 +69,8 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button> 
+    
     <h1>Edit Goals</h1>
     
     <button on:click= {fetchGoals}>Fetch Goals</button>

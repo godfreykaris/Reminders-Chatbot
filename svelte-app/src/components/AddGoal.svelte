@@ -65,6 +65,7 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Add a Goal</h1>
     {#if error_message != ''}
         <p class="error-message">{error_message}</p>

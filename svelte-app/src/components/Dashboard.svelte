@@ -1,31 +1,41 @@
-<!-- Dashboard.svelte -->
 <script>
-  // Define any data or variables you want to display in the dashboard
-  let username = 'John Doe';
-  let userRole = 'User';
-  let userTasks = [
-    { id: 1, task: 'Complete assignment' },
-    { id: 2, task: 'Attend meeting' },
-    { id: 3, task: 'Exercise' },
-  ];
+  import {push} from 'svelte-spa-router'
 </script>
 
 <style>
-  /* Add your CSS styles for the dashboard here */
-  /* Example: */
-  .dashboard {
-    padding: 20px;
+  .center-container {
+    display: flex;
+    flex-direction: column; /* Center vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* 100% viewport height to fill the entire screen */
   }
+  
 </style>
 
-<div class="dashboard">
-  <h1>Welcome, {username}!</h1>
-  <p>Role: {userRole}</p>
-  <h2>Your Tasks:</h2>
-  <ul>
-    {#each userTasks as task (task.id)}
-      <li>{task.task}</li>
-    {/each}
-  </ul>
-  <!-- Add more UI elements as needed -->
+<div class='center-container'>
+  <h1>Reminders App</h1>
+  <button on:click={() => push('/dashboard')}>Home</button>
+
+  <hr/>
+
+  <button on:click={() => push('/edituser')}>Edit User</button>
+  <button on:click={() => push('/deleteuser')}>Delete User</button>
+
+  <hr/>
+
+  <button on:click={() => push('/addgoal')}>Add Goal</button>
+  <button on:click={() => push('/editgoal')}>Edit Goal</button>
+  <button on:click={() => push('/deletegoal')}>Delete Goal</button>
+  
+  <hr/>
+
+  <button on:click={() => push('/viewgoals')}>View Goals</button>
+  <button on:click={() => push('/view_report')}>View Report</button>
+
+  <hr/>
+
+
+  <button on:click={() => push('/')}>Logout</button>
+
 </div>

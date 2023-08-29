@@ -1,4 +1,5 @@
 <script>
+    import {push} from 'svelte-spa-router';
 
     let goals = [];
 
@@ -61,6 +62,7 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Delete Goal</h1>
 
     {#if error_message != ''}

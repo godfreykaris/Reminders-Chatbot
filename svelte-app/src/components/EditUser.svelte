@@ -1,4 +1,6 @@
 <script>
+    import {push} from 'svelte-spa-router';
+
     let user = {};
 
     let user_id = 6;
@@ -61,6 +63,8 @@
 </script>
 
 <main>
+    <button on:click={() => push('/dashboard')}>Dashboard</button>
+    
     <h1>Edit User</h1>
     <button on:click= {() => fetchUser(user_id)}>Fetch User</button>
     
