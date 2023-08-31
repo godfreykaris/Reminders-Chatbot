@@ -9,7 +9,7 @@
     let success_message = '';
 
     async function fetchUsers() {
-        const response = await fetch('/get_users');
+        const response = await fetch('/api/get_users');
 
         if(response.ok){
             users = await response.json();
@@ -36,7 +36,7 @@
         if(!confirm_delete)
             return
 
-        const response = await fetch('/delete_user', {
+        const response = await fetch('/api/delete_user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

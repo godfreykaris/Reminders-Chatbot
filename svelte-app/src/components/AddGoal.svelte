@@ -1,5 +1,4 @@
 <script>
-    import { BASE_URL } from '../config.js';
 
     let report_frequency = 1;
     let goal_title = '';
@@ -28,7 +27,7 @@
           headers: headers,
         };
 
-        const response = await fetch(`${BASE_URL}/api/get_timezones`, myInit);
+        const response = await fetch(`/api/get_timezones`, myInit);
         
         if(response.ok){
             timezones = await response.json();
@@ -50,7 +49,7 @@
             contact_choice
         };
     
-        const response = await fetch('/add_goal', {
+        const response = await fetch('/api/add_goal', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

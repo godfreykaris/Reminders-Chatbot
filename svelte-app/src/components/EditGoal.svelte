@@ -1,9 +1,5 @@
 <script>
-<<<<<<< HEAD
     import {push} from 'svelte-spa-router';
-=======
-    import { BASE_URL } from '../config.js';
->>>>>>> reminders/trunk
 
     let goals = [];
 
@@ -26,7 +22,7 @@
     };
     async function fetch_timezones(){
         
-        const response = await fetch(`${BASE_URL}/api/get_timezones`, myInit);
+        const response = await fetch(`/api/get_timezones`, myInit);
 
         if(response.ok){
             timezones = await response.json();
@@ -38,7 +34,7 @@
     }
 
     async function fetchGoals() {
-        const response = await fetch(`${BASE_URL}/api/get_goals`, myInit);
+        const response = await fetch(`/api/get_goals`, myInit);
         
         if(response.ok){
             goals = await response.json();
@@ -53,7 +49,7 @@
     }
 
     async function EditGoal() {
-        const response = await fetch('/edit_goal', {
+        const response = await fetch('/api/edit_goal', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

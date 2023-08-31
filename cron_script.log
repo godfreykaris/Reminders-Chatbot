@@ -1,3 +1,862 @@
-ERROR:root:Script encountered an error: cannot access local variable 'report' where it is not associated with a value  + 6
 INFO:root:Script executed successfully
 INFO:root:Script executed successfully
+INFO:root:Script executed successfully--user_id
+INFO:root:Script executed successfully123
+ERROR:root:Script encountered an error: list index out of range  + 3
+ERROR:root:Script encountered an error: list index out of range  + 3
+INFO:root:Script executed successfully123
+INFO:root:Script executed successfully
+INFO:root:Script executed successfully123
+INFO:root:Script executed successfully123
+INFO:root:Script executed successfully123
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 123
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 123
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 123
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 123
+ERROR:root:Script encountered an error: list index out of range  + 5
+ERROR:root:Script encountered an error: list index out of range  + 5
+ERROR:root:Script encountered an error: list index out of range  + 5
+ERROR:root:Script encountered an error: can only concatenate str (not "int") to str  + 1
+ERROR:root:Script encountered an error: can only concatenate str (not "int") to str  + 1
+ERROR:root:Script encountered an error: can only concatenate str (not "int") to str  + 1
+ERROR:root:Script encountered an error: list index out of range  + 5
+ERROR:root:Script encountered an error: list index out of range  + cron_job.py
+INFO:root:Script executed successfullycron_job.py
+INFO:root:Script executed successfully4
+INFO:root:Script executed successfully4
+INFO:root:Script executed successfully4
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 4
+INFO:root:Script executed successfully4
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5d940ed600>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8b77ef5600>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: 'method' object is not subscriptable  + 6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: 'Response' object is not subscriptable  + 6
+ERROR:root:Script encountered an error: 'Response' object is not subscriptable  + 6
+ERROR:root:Script encountered an error: 'Response' object is not subscriptable  + 6
+ERROR:root:Script encountered an error: 'Response' object is not subscriptable  + 6
+ERROR:root:Script encountered an error: 'Response' object is not subscriptable  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: list index out of range  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 4
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully--user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully--user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully--user_id
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'generated_message' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fdb36bd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1e88ed6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb5a70d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa7666e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6e08bbad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f03bd3dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70ff4d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7feeb99dde70>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f82b68bde70>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa541bd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f11113e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6ee91b6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fcd235b6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fdb6d2bed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal_data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff046df5630>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal_data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe3c4bf1630>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal_data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f56107f5630>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fba097bed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal_data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e076f1690>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal_data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7feb1d7d1690>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f91796e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f88fb2dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc3d5ce6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal_data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f02c99d1630>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal' referenced before assignment  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_user (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fafb91a2a70>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_user (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f92259aea70>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: local variable 'user' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'user' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'user' referenced before assignment  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7c555b1e70>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3d0c6e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0bb07d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f568babed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f94212bed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc7fb3d2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f03224dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa3d89d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f47ed3d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2735fd2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc0467bad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f631fbdad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_user (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f92189d2a10>: Failed to establish a new connection: [Errno 111] Connection refused'))  + 6
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6288bbed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f05169d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1a0f9d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5407bd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff64c6dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f16ad5d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'user' referenced before assignment  + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa8b1be6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8ca7ae2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f596d1b6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1d468d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f728b1dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f54f70d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43905bed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5dee2bad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f40f8bd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe6dced6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f53fd2d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5e998e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ffaa90e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f72d2ce6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2d48ad6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fcc77dbad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7cf9fd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1fa82e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f22d73bed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff1038bed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f704fbd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f884ded6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f56056e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb6f87bad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fdb7bce6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0f35dd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7feffc6d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2376ad6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd8d10bad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7e307e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2a5bbd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5d2fdd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f91b9be2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fccac5e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f662d9dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f34510e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff27c2dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efc3dee6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f49a40d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f42debe6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0a02de2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f37133e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7fa7cdad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f02997d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe6d1ce2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f17a3ddad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f010fed6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fea46ebad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f76ac4e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe8fafdad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0595cd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff933de6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f197d1e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fdd7c4d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9a7aae6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3002cdad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9425edad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f33b66dad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff4184e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f299d4d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa2dcabed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4e8bbbad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe0940e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f60ab2e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6b4bfd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f711a1d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ffbac0d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe785fdad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff2536e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f46f4be6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f91343bad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f65568e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f40a24d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0ece5d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fae8cae6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8ce20bed40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd8ceed6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f01b4ee2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4c6afdad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0cdd6e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3f4f3e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc4c0ee2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f44b2cd6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f29579d6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f371f2e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff0340e2d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f50b85e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f75de8bad40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43f63e6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /api/user/retrieve_goal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7efe4cce6d40>: Failed to establish a new connection: [Errno 111] Connection refused'))  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + 6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment  + --user_id
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+ERROR:root:Script encountered an error: local variable 'user' referenced before assignment  + 6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+INFO:root:Script executed successfully6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))  + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+ERROR:root:Script encountered an error: local variable 'goal_data' referenced before assignment + User ID: + --user_id
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: 'goal_data' + User ID: + 6
+ERROR:root:Script encountered an error: 'goal_data' + User ID: + 6
+ERROR:root:Script encountered an error: 'goal_data' + User ID: + 6
+ERROR:root:Script encountered an error: 'goal_data' + User ID: + 6
+ERROR:root:Script encountered an error: 'goal_data' + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+INFO:root:Script executed successfully. User ID:6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+ERROR:root:Script encountered an error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) + User ID: + 6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6
+INFO:root:Script executed successfully. User ID:6

@@ -31,7 +31,7 @@
   <hr/>
 
   <button on:click={() => push('/viewgoals')}>View Goals</button>
-  <button on:click={() => push('/view_report')}>View Report</button>
+  <button on:click={() => push('/viewreport')}>View Report</button>
 
   <hr/>
 

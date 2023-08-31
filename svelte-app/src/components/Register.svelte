@@ -1,13 +1,6 @@
 <script>
-<<<<<<< HEAD
   import { push } from "svelte-spa-router";
   
-=======
-
-  import { BASE_URL } from '../config.js';
-
-
->>>>>>> reminders/trunk
   let name =   '' ;
   let email = '';
   let phone = '';
@@ -19,7 +12,7 @@
 
   async function handleRegister() {
     try {
-      const response = await fetch(`${BASE_URL}/api/register`, {
+      const response = await fetch(`/api/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',          

@@ -8,7 +8,9 @@
     "twilio_sid": "AC0bccd8de515300cb847c910c28be6806",
     "twilio_token": "fa1f34b4d9661b116f5df13e53137426",
     "from_phone_number_sms": "+17066003537",
-    "from_phone_number_whatsapp": "+14155238886"
+    "from_phone_number_whatsapp": "+14155238886",
+
+    "openai_key":"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"
 
   }
 
