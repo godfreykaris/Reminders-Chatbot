@@ -1,9 +1,5 @@
 <script>
-<<<<<<< HEAD
     import {push} from 'svelte-spa-router';
-=======
-    import { BASE_URL } from '../config.js';
->>>>>>> reminders/trunk
 
     let goals = [];
 
@@ -24,7 +20,7 @@
     };
 
     async function fetchGoals() {
-        const response = await fetch(`${BASE_URL}/api/get_goals`, myInit);
+        const response = await fetch(`/api/get_goals`, myInit);
 
         if(response.ok)
         {
@@ -48,7 +44,7 @@
         if(!select_goal)
             return;
 
-        const response = await fetch(`${BASE_URL}/delete_goal`, {
+        const response = await fetch(`/api/delete_goal`, {
             method: 'POST',
             mode: 'cors',
             credentials: 'include',

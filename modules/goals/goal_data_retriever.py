@@ -16,26 +16,38 @@ class UserGoalData:
             database_connection = self.database_initializer.get_database_connection()
             cursor = database_connection.cursor()
 
-            # Retrieve the user's goal based on user_id and goal_id
-            cursor.execute("SELECT created_at, status, feedback FROM goal_data WHERE user_id = %s AND goal_id = %s;", (user_id, goal_id))
-            user_goal_data = cursor.fetchall()
+            cursor.execute("SELECT created_at, feedback FROM goal_data WHERE user_id = %s AND goal_id = %s ORDER BY created_at DESC", (user_id, goal_id))
+            
+            # Initialize a list to store the result in the desired format
+            goal_entries = []
 
-            if user_goal_data:
-                # Initialize an empty list to store multiple goal entries
-                goal_entries = []
+            # Initialize variables to track total character count
+            total_chars = 0
 
-                # Loop through each goal data entry
-                for row in user_goal_data:
-                    # Create a dictionary for each goal entry
-                    goal_entry = {
-                        'created_at': row[0],
-                        'status': row[1],
-                        'feedback': row[2],  # Assuming the report is in the third column
-                    }
+            # Iterate through the records
+            for created_at, feedback in cursor:
+                # Calculate the length of the current feedback
+                feedback_length = len(feedback)
 
-                    # Append the goal entry to the list
-                    goal_entries.append(goal_entry)
+                # Calculate the length of the created_at as a string 
+                created_at_length = len(str(created_at))
 
+                # Check if adding the current feedback and created_at exceeds the character limit
+                # (limit from the number of required tokens for chatgpt minus the prompt size)
+                if total_chars + feedback_length + created_at_length > 3400:
+                    break  # Stop if adding more characters would exceed the limit
+                
+                # Append the current feedback and created_at to the result list
+                goal_entries.append({
+                    "created_at": str(created_at),  # Convert to string if not already
+                    "feedback": feedback
+                })
+
+                # Update the total character count
+                total_chars += feedback_length + created_at_length
+
+            if len(goal_entries) > 0:
+                
                 # Return the list of goal entries as JSON
                 return jsonify({'message': 'Goals retrieved successfully', 'goal_data_entries': goal_entries})
             else:

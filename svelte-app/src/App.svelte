@@ -15,6 +15,7 @@
   import Notfound from  './components/Notfound.svelte';
 
   import ViewGoals from './components/ViewGoals.svelte';
+  import ViewReport from './components/ViewReport.svelte';
 
   const routes = {
     
@@ -33,6 +34,7 @@
     '/deletegoal' : DeleteGoal,
 
     '/viewgoals' : ViewGoals,
+    '/viewreport' : ViewReport,
 
     '*' : Notfound,
 }

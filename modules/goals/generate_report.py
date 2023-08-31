@@ -7,7 +7,7 @@ class ReportGenerator:
     def __init__(self):
         self.base_url = "http://localhost:5000"  # Update with your Flask application's base URL
 
-    def generate_report_and_send(self, user_id, goal_id):
+    def generate_report_and_send(self, user_id, goal_id, report_type):
         try:
             # Retrieve user information
             user = self.retrieve_user(user_id)
@@ -19,7 +19,7 @@ class ReportGenerator:
             goal_data = self.retrieve_goal_data(user_id, goal_id)
 
             # Generate the report
-            report = self.generate_report(user, goal, goal_data)
+            report = self.generate_report(user, goal, goal_data, report_type)
 
             # Send the report
             self.send_report(user, report, goal['contact_choice'].lower())
@@ -46,15 +46,14 @@ class ReportGenerator:
         url = f"{self.base_url}/api/user/retrieve_goal_data"
         data = {"user_id": user_id, "goal_id": goal_id}
         response = requests.post(url, json=data)
-
-        if response.status_code == 404:
-            return []
-        
         response.raise_for_status()
         return response.json().get('goal_data_entries')
 
-    def generate_report(self, user, goal, goal_data):
-        url = f"{self.base_url}/api/chat/generate_report"
+    def generate_report(self, user, goal, goal_data, report_type):
+        if report_type == 'message':
+            url = f"{self.base_url}/api/chat/generate_message_report"
+        else:
+            url = f"{self.base_url}/api/chat/generate_pdf_report"
 
         request_data = {
             "user_data": {
@@ -64,7 +63,6 @@ class ReportGenerator:
             }
         }
 
-        
         response = requests.post(url, json=request_data)
         response.raise_for_status()
         return response.json().get('bot_response')
@@ -82,12 +80,16 @@ class ReportGenerator:
         logging.info(f"Message sent to {user['name']} ({user['phone']})")
 
 def main(args):
-    
-    user_id = args[2]
-    goal_id = args[4]
+    if len(args) < 7:
+        print("Usage: python script.py <user_id> <goal_id> <report_type>")
+        sys.exit(1)
+
+    user_id = args[1]
+    goal_id = args[2]
+    report_type = args[3]
 
     report_generator = ReportGenerator()
-    report_generator.generate_report_and_send(user_id, goal_id)
+    report_generator.generate_report_and_send(user_id, goal_id, report_type)
 
 if __name__ == '__main__':
     main(sys.argv)
