@@ -1,6 +1,11 @@
 <script>
     import {push} from 'svelte-spa-router';
 
+    import { onMount } from 'svelte';
+    import { Circle2 } from 'svelte-loading-spinners';
+
+    let isLoading = false;
+
     let users = [];
 
     let selected_user = null;
@@ -21,16 +26,19 @@
     };
 
     async function fetchUsers() {
+        isLoading = true;
         const response = await fetch('/api/get_users', myInit);
 
         if(response.ok){
             users = await response.json();
             error_message = '';
             success_message = 'Users fetched successfully';
+            isLoading = false;
 
         }else{
             error_message = "An error occurred trying to fetch goals";
             success_message = '';
+            isLoading = false;
         }
         
     }
@@ -42,12 +50,13 @@
     async function DeleteUser() {
         if(!selected_user)
             return;
-
+        
         const confirm_delete = window.confirm("Are you sure you want to delete this user");
 
         if(!confirm_delete)
             return
-
+        
+        isLoading = true;
         let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch('/api/delete_user', {
             method: 'POST',
@@ -62,16 +71,16 @@
         if(!response.ok){
             error_message = "Error trying to delete user";
             success_message = '';
+            isLoading = false;
         }
         else
         {
             error_message = '';
             success_message = 'User deleted successfully';
+            isLoading = false;
 
         }
 
-        // const data = await response.json();
-        // console.log(data.message);
 
         selected_user = null;
         fetchUsers(); // Refresh the userss list after deletion
@@ -79,7 +88,7 @@
 
 </script>
 
-<main>
+<main >
     <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Delete User</h1>
 
@@ -87,6 +96,12 @@
         <p class="error-message">{error_message}</p>
     {:else if success_message != ''}
         <p class="success-message">{success_message}</p>
+    {/if}
+
+    {#if isLoading}
+        <div class="center-container">
+            <Circle2 size="64" />
+        </div>
     {/if}
 
     <button on:click= {fetchUsers}>Fetch Users</button>
@@ -176,4 +191,12 @@
         font-size: 14px;
         margin-top: 4px;
     }
+
+    .center-container {
+        display: flex;
+        flex-direction: column; /* Center vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        
+      }
 </style>

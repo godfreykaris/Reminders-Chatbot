@@ -1,5 +1,9 @@
 <script>
     import {push} from 'svelte-spa-router';
+    import { onMount } from 'svelte';
+    import { Circle2 } from 'svelte-loading-spinners';
+
+    let isLoading = false;
 
     let goals = [];
 
@@ -21,6 +25,7 @@
     };
 
     async function fetchGoals() {
+        isLoading = true;
         const response = await fetch(`/api/get_goals`, myInit);
 
         if(response.ok)
@@ -28,12 +33,13 @@
             goals = await response.json();
             error_message = '';
             success_message = 'Goals fetched successfully';
-
+            isLoading = false;
         }           
         else
         {
             error_message = "An error occurred trying to fetch goals";
             success_message = '';
+            isLoading = false;
         }
     }
 
@@ -44,7 +50,9 @@
     async function DeleteGoal() {
         if(!select_goal)
             return;
-            
+
+        isLoading = true;   
+
         let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch(`/api/delete_goal`, {
             method: 'POST',
@@ -60,23 +68,22 @@
         {
             error_message = "An error occurred";
             success_message = '';
+            isLoading = false;
         }
         else
         {
             error_message = "";
             success_message = 'Goal deleted successfully.';
-
+            isLoading = false;
         }
-        // const data = await response.json();
-        // console.log(data.message);
-
+        
         selected_goal = null;
         fetchGoals(); // Refresh the goals list after deletion
     }
 
 </script>
 
-<main>
+<main class="center-container">
     <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Delete Goal</h1>
 
@@ -85,7 +92,9 @@
     {:else if success_message != ''}
         <p class="success-message">{success_message}</p>
     {/if}
-
+    {#if isLoading}
+         <Circle2 size="64" />
+    {/if}
     <button on:click= {fetchGoals}>Fetch Goals</button>
 
     {#if goals.length > 0}
@@ -173,4 +182,12 @@
         font-size: 14px;
         margin-top: 4px;
     }
+
+    .center-container {
+        display: flex;
+        flex-direction: column; /* Center vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        
+      }
 </style>

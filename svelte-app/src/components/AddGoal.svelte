@@ -1,6 +1,11 @@
 <script>
     import {push} from 'svelte-spa-router'
-    
+
+    import { onMount } from 'svelte';
+    import { Circle2 } from 'svelte-loading-spinners';
+
+    let isLoading = false;
+
     let report_frequency = 1;
     let goal_title = '';
     let goal_description = '';
@@ -17,6 +22,9 @@
 
     
     async function fetch_timezones(){
+
+        isLoading = true;
+
         let headers = new Headers();
 
         headers.append('Accept', 'application/json');
@@ -33,16 +41,19 @@
         
         if(response.ok){
             timezones = await response.json();
+            isLoading = false;
         }else{
             error_message = "An error occurred trying to fetch timezones";
             success_message = '';
+            isLoading = false;
         }
     }
 
     fetch_timezones();
 
     async function AddGoal() {
-        const formData = {
+        isLoading = true;
+        const goal_data = {
             report_frequency,
             goal_title,
             goal_description,
@@ -59,17 +70,19 @@
                 'Content-Type': 'application/json',
                 "X-CSRFToken": csrf,
             }, 
-            body: JSON.stringify(formData)
+            body: JSON.stringify({goal_data})
         });
 
         if(!response.ok){
             error_message = "An error occurred trying to add a goal";
             success_message = ''
+             isLoading = false;
         }
         else
         {
             error_message = '';
             success_message = 'Goal added successfully';
+            isLoading = false;
         }
     
     }
@@ -80,15 +93,23 @@
     // Clamp the input value within the range of 1 to 365
     report_frequency = Math.min(Math.max(inputValue, 1), 365);
   }
+
+  onMount(() => {
+            // Reset isLoading state when the component is mounted
+            isLoading = false;
+          });
 </script>
 
-<main>
+<main class="center-container">
     <button on:click={() => push('/dashboard')}>Dashboard</button>
     <h1>Add a Goal</h1>
     {#if error_message != ''}
         <p class="error-message">{error_message}</p>
     {:else if success_message != ''}
         <p class="success-message">{success_message}</p>
+    {/if}
+    {#if isLoading}
+        <Circle2 size="64" />
     {/if}
     <hr/>
     <form on:submit|preventDefault={AddGoal}> 
@@ -105,6 +126,7 @@
         <label>
             Timezone:
             <select bind:value={time_zone}>
+                <option style="text-align: center;" value="">---Select---</option> <!-- Default option -->
                 {#each timezones as timezone}
                     <option value={timezone}>{timezone}</option>
                 {/each}
@@ -113,11 +135,13 @@
         <label>
             Contact Choice:
             <select bind:value={contact_choice}>
+                <option value="">---Select---</option> <!-- Default option -->
                 {#each choices as choice}
                     <option value={choice}>{choice}</option>                    
                 {/each}
             </select>
         </label>
+
         
         <label>
             Report Frequency: <input type="number" bind:value={report_frequency} on:input={handleInput} min={1} max={365} required />
@@ -159,4 +183,13 @@
         font-size: 14px;
         margin-top: 4px;
     }
+
+    .center-container {
+        display: flex;
+        flex-direction: column; /* Center vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        height: 100vh; /* 100% viewport height to fill the entire screen */
+    }
+
 </style>

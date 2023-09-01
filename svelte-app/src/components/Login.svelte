@@ -1,6 +1,11 @@
 <script>
   import {push} from 'svelte-spa-router';
 
+  import { onMount } from 'svelte';
+  import { Circle2 } from 'svelte-loading-spinners';
+
+  let isLoading = false;
+
   let username = '';
   let password = '';
   let message = ''; // Initialize response message variable
@@ -8,6 +13,7 @@
 
   // Function to handle login
   async function handleLogin() {
+    isLoading = true;
     try {
       let csrf = document.getElementsByName("csrf-token")[0].content;
       const response = await fetch('/api/login', {
@@ -25,16 +31,23 @@
       if (response.ok) {
         // Authentication successful
         message = data.message;
+        isLoading = false;
        push('/dashboard') // Redirect to the dashboard
       } else {
         // Authentication failed
         message = data.message; //'Authentication failed. Please check your credentials.';
+        isLoading = false;
       }
     } catch (error) {
       console.error('Error:', error);
       message = 'An error occurred while trying to log in. Please try again later.';
+      isLoading = false;
     }
   }
+  onMount(() => {
+            // Reset isLoading state when the component is mounted
+            isLoading = false;
+          });
 </script>
 
 <style>
@@ -84,6 +97,9 @@ h1 {
     <!-- Display the message if it's not empty -->
       {#if message}
         <p class='error-message'>{message}</p>
+      {/if}
+      {#if isLoading}
+          <Circle2 size="64" />
       {/if}
       <form on:submit|preventDefault={handleLogin}> 
         <label for="username">Email/Phone</label>

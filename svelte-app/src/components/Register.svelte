@@ -1,6 +1,11 @@
 <script>
   import { push } from "svelte-spa-router";
   
+  import { onMount } from 'svelte';
+  import { Circle2 } from 'svelte-loading-spinners';
+
+  let isLoading = false;
+
   let name =   '' ;
   let email = '';
   let phone = '';
@@ -11,6 +16,9 @@
 
 
   async function handleRegister() {
+    success_message = "";
+    error_message = "";
+    isLoading = true;
     try {
       let csrf = document.getElementsByName("csrf-token")[0].content;
       const response = await fetch(`/api/register`, {
@@ -26,17 +34,18 @@
           email: email,
           password: password,
         }),
-        credentials: "include",
       });
 
       const data = await response.json();
-
+      
       if (response.ok) 
       {
+
         // Registration successful
         console.log('User registered successfully');
         success_message = data.message; // Set the error message from the response
         error_message = "";
+        isLoading = false;
 
       } 
       else 
@@ -44,13 +53,15 @@
         // Registration failed, handle errors
         error_message = data.message; // Set the error message from the response
         success_message = "";
-        console.error('Registration failed:', message);
+        console.error('Registration failed:', error_message);
+        isLoading = false;
       }
     } catch (error) {
       // Network or other error occurred
       error_message = 'An error occurred while registering.';
       success_message = "";
       console.error('Error:', error);
+      isLoading = false;
     }
   }
 </script>
@@ -111,6 +122,12 @@ h1 {
   {:else}
         <p class="success-message">{success_message}</p>
   {/if}
+
+  {#if isLoading}
+        <div style="margin-bottom: 10px">
+            <Circle2 size="64" />
+        </div>
+    {/if}
   
   <form>
     <label for="name">Name</label>
