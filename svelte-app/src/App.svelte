@@ -3,6 +3,7 @@
 
   import Landing from './components/Landing.svelte';
   import Login from './components/Login.svelte'
+  import Logout from './components/Logout.svelte'
   import Register from './components/Register.svelte';
   import Dashboard from './components/Dashboard.svelte';
 
@@ -22,6 +23,7 @@
     '/': Landing,
 
     '/login': Login,
+    '/logout': Logout,
 
     '/register': Register,
     '/edituser': EditUser,

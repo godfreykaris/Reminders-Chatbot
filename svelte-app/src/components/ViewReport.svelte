@@ -2,23 +2,51 @@
     import {push} from 'svelte-spa-router';
     import {PDFDocument, StandardFonts, rgb} from 'pdf-lib';
 
+    let user_data = null;
     let goals = [];
 
     let selected_goal = null;
 
     let error_message = '';
+    let success_message = '';
     let document_name = '';
 
     let pdfDataUri = null;
 
+    let headers = new Headers();
+
+    headers.append('Accept', 'application/json');
+    let csrf = document.getElementsByName("csrf-token")[0].content;
+    headers.append("X-CSRFToken", csrf);
+
+    const myInit = {
+      method: "GET",
+      credentials: "same-origin",
+      headers: headers,
+    };
 
     async function fetchGoals() {
-        const response = await fetch('/api/get_goals');
-        
+
+       
+        // Get the current user
+        const response = await fetch(`/api/user_data`, myInit);
+
         if(response.ok){
-            goals = await response.json();
+            user_data = await response.json();
         }else{
-            error_message = "An error occurred fetching goals";
+            error_message = "An error occurred fetching user";
+            success_message = '';
+        }
+
+        if(user_data)
+        {
+            const response = await fetch('/api/get_goals', myInit);
+
+            if(response.ok){
+                goals = await response.json();
+            }else{
+                error_message = "An error occurred fetching user";
+            }
         }
     }
 
@@ -98,22 +126,38 @@
 
 
     async function FetchReport() {
-        const response = await fetch(`/api/get_report/${selected_goal.id}/${selected_goal.user_id}`); //, {method: 'GET', headers: {'Content-Type': 'application/json'}});
 
-        if(response.ok)
-        {  
-            const reportText = await response.text();
-            const pdfDoc = await generatePDF(reportText, selected_goal);
-            //generate a data uri for the PDF
-            const pdfBytes = await pdfDoc.save();
-            pdfDataUri = URL.createObjectURL(new Blob([pdfBytes], {type: 'application/pdf'}));
-            document_name = selected_goal.goal_title + " report.pdf";
-            error_message = "";
+        // Get the current user
+        const response = await fetch(`/api/user_data`, myInit);
+
+        if(response.ok){
+            user_data = await response.json();
+            alert(user_data)
+        }else{
+            error_message = "An error occurred fetching timezones";
+            success_message = '';
         }
-        else
+
+        if(user_data)
         {
-            error_message = 'Error fetching report';
+            const response = await fetch(`/api/get_report/${selected_goal.id}`); //, {method: 'GET', headers: {'Content-Type': 'application/json'}});
+
+            if(response.ok)
+            {  
+                const reportText = await response.text();
+                const pdfDoc = await generatePDF(reportText, selected_goal);
+                //generate a data uri for the PDF
+                const pdfBytes = await pdfDoc.save();
+                pdfDataUri = URL.createObjectURL(new Blob([pdfBytes], {type: 'application/pdf'}));
+                document_name = selected_goal.goal_title + " report.pdf";
+                error_message = "";
+            }
+            else
+            {
+                error_message = 'Error fetching report';
+            }
         }
+        
 
     }
 </script>

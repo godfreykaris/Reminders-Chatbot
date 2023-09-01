@@ -3,15 +3,25 @@
 
     let user = {};
 
-    let user_id = 6;
-
     let selected_user = null;
 
     let error_message = '';
     let success_message = '';
 
+    let headers = new Headers();
+
+    headers.append('Accept', 'application/json');
+    let csrf = document.getElementsByName("csrf-token")[0].content;
+    headers.append("X-CSRFToken", csrf);
+
+    const myInit = {
+      method: "GET",
+      credentials: "same-origin",
+      headers: headers,
+    };
+
     async function fetchUser(user_id) {
-        const response = await fetch(`/api/get_user/${user_id}`);
+        const response = await fetch(`/api/get_user`, myInit);
         
         if (user.hasOwnProperty('message') && user.message === 'User not found' || user.message === 'Failed to fecth user') {
         // Handle the case where the user is not found
@@ -24,17 +34,16 @@
         }
     }
 
-    async function select_user(user){
-        selected_user = user;
-    }
 
     async function EditUser() {
+        let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch('/api/edit_user', {
             method: 'POST',
+            credentials: 'same-origin',
             headers: {
-                'Content-Type': 'application/json'
-            }, 
-            body: JSON.stringify(selected_user)
+                'Content-Type': 'application/json',
+                "X-CSRFToken": csrf,
+            },  
         });
 
         if(!response.ok){

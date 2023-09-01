@@ -11,11 +11,12 @@
     let headers = new Headers();
 
     headers.append('Accept', 'application/json');
+    let csrf = document.getElementsByName("csrf-token")[0].content;
+    headers.append("X-CSRFToken", csrf);
 
     const myInit = {
       method: "GET",
-      mode: 'cors',
-      credentials: 'include',
+      credentials: "same-origin",
       headers: headers,
     };
 
@@ -43,14 +44,14 @@
     async function DeleteGoal() {
         if(!select_goal)
             return;
-
+            
+        let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch(`/api/delete_goal`, {
             method: 'POST',
-            mode: 'cors',
-            credentials: 'include',
+            credentials: 'same-origin',
             headers: {
                 'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                "X-CSRFToken": csrf,
             }, 
             body: JSON.stringify({id: selected_goal.id})
         });

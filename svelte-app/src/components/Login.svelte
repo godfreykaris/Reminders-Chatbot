@@ -9,11 +9,14 @@
   // Function to handle login
   async function handleLogin() {
     try {
+      let csrf = document.getElementsByName("csrf-token")[0].content;
       const response = await fetch('/api/login', {
         method: 'POST',
+        credentials: 'same-origin',
         headers: {
-          'Content-Type': 'application/json',
-        },
+            'Content-Type': 'application/json',
+            "X-CSRFToken": csrf,
+        }, 
         body: JSON.stringify({ username, password }), // Send the username and password
       });
 

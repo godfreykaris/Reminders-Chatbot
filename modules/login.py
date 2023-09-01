@@ -25,14 +25,14 @@ class UserLogin:
 
             if user and check_password_hash(user[3], password):
                 # Authentication successful
-                return jsonify({'message': 'Login successful', 'user_id': user[0]})
+                return jsonify({'message': 'Login successful', 'user_id': user[0], 'status': 200})
             else:
                 # Authentication failed
-                return jsonify({'message': 'Authentication failed'}), 401
+                return jsonify({'message': 'Authentication failed', 'status': 401})
 
         except Exception as e:
             #return jsonify({'message': 'Login failed', 'error': str(e)}), 500
-            return jsonify({'message': str(e), 'error': str(e)}), 500 # For testing only
+            return jsonify({'message': str(e), 'error': str(e), 'status': 500}) # For testing only
 
         finally:
             cursor.close()

@@ -12,11 +12,14 @@
 
   async function handleRegister() {
     try {
+      let csrf = document.getElementsByName("csrf-token")[0].content;
       const response = await fetch(`/api/register`, {
         method: 'POST',
+        credentials: 'same-origin',
         headers: {
-          'Content-Type': 'application/json',          
-        },
+            'Content-Type': 'application/json',
+            "X-CSRFToken": csrf,
+        }, 
         body: JSON.stringify({
           phone: phone,
           name: name,          

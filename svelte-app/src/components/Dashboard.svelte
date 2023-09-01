@@ -36,6 +36,6 @@
   <hr/>
 
 
-  <button on:click={() => push('/')}>Logout</button>
+  <button on:click={() => push('/logout')}>Logout</button>
 
 </div>
