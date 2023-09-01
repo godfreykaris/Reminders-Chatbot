@@ -3,6 +3,7 @@ import logging
 import requests
 import sys
 
+
 class ReportGenerator:
     def __init__(self):
         self.base_url = "http://localhost:5000"  # Update with your Flask application's base URL

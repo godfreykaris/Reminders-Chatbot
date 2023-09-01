@@ -11,6 +11,13 @@ class ChatGPTResponse:
             config = json.load(config_file)
         return config
     
+    def remove_last_line_without_full_stop(self, bot_response):
+        lines = bot_response.split('\n')
+        # Check if the last line doesn't end with a full stop
+        if lines and not lines[-1].strip().endswith('.'):
+            lines.pop()  # Remove the last line
+        return '\n'.join(lines)
+    
     def generate_analysis_report(self, prompt_message, response_max_tokens):
         credentials = self.get_credentials()
 
@@ -27,7 +34,9 @@ class ChatGPTResponse:
 
             # Extract the generated response from ChatGPT
             bot_response = response['choices'][0]['message']['content']
-
+            
+            # Remove the last line if it does not end with a full stop
+            bot_response = self.remove_last_line_without_full_stop(bot_response)
 
             return jsonify({'message': 'Response generated successfully', 'bot_response': bot_response})
 

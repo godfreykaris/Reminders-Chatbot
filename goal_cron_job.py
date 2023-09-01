@@ -5,6 +5,7 @@ import sys
 import logging
 import requests
 
+
 class GoalReminderCron:
     def __init__(self):
         self.base_url = "http://localhost:5000"

@@ -1,5 +1,6 @@
 <script>
-
+    import {push} from 'svelte-spa-router'
+    
     let report_frequency = 1;
     let goal_title = '';
     let goal_description = '';

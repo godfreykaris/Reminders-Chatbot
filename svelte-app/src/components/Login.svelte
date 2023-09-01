@@ -74,21 +74,24 @@ h1 {
   }
 </style>
 
-<main class="center-container">
-  <button on:click={() => push('/')}>Home</button> 
-  <h1>LOGIN</h1>
-<!-- Display the message if it's not empty -->
-  {#if message}
-    <p class='error-message'>{message}</p>
-  {/if}
-  <form on:submit|preventDefault={handleLogin}> 
-    <label for="username">Email/Phone</label>
-    <input type="text" id="username" bind:value={username} />
-
-    <label for="password">Password</label>
-    <input type="password" id="password" bind:value={password} />
-    <br>
-    <button type="submit">Login</button>
-  </form>
+<main>
+  <div class="center-container">
+    <button on:click={() => push('/')}>Home</button> 
+      <h1>LOGIN</h1>
+    <!-- Display the message if it's not empty -->
+      {#if message}
+        <p class='error-message'>{message}</p>
+      {/if}
+      <form on:submit|preventDefault={handleLogin}> 
+        <label for="username">Email/Phone</label>
+        <input type="text" id="username" bind:value={username} />
+    
+        <label for="password">Password</label>
+        <input type="password" id="password" bind:value={password} />
+        <br>
+        <button type="submit">Login</button>
+      </form>
+  </div>
+  
 </main>
 
