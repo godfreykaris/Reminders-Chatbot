@@ -1,12 +1,21 @@
 <script>
     import {push} from 'svelte-spa-router';
 
-    let user = {};
+    import { onMount } from 'svelte';
+    import { Circle2 } from 'svelte-loading-spinners';
 
-    let selected_user = null;
+    let isLoading = false;
+
+    let user_data = null;
+    let user = {
+        name: '', // Initialize with empty values or defaults
+        email: '',
+        phone: '',
+    };
 
     let error_message = '';
     let success_message = '';
+
 
     let headers = new Headers();
 
@@ -20,22 +29,27 @@
       headers: headers,
     };
 
-    async function fetchUser(user_id) {
-        const response = await fetch(`/api/get_user`, myInit);
-        
-        if (user.hasOwnProperty('message') && user.message === 'User not found' || user.message === 'Failed to fecth user') {
-        // Handle the case where the user is not found
-            error_message = "User not found";
-            success_message = '';
-            user = {};            
-        } else {
-        // Handle the case where the user is found
-            user = await response.json()
-        }
+    async function fetchUser() {
+         isLoading = true;
+         // Get the current user
+         const response = await fetch(`/api/user_data`, myInit);
+ 
+         if(response.ok){
+             user_data = await response.json();
+             user = user_data['user_info'];
+             isLoading = false;
+         }else{
+             error_message = "An error occurred fetching user";
+             success_message = '';
+             isLoading = false;
+         }
     }
 
+    fetchUser();
 
     async function EditUser() {
+
+        isLoading = true;
         let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch('/api/edit_user', {
             method: 'POST',
@@ -43,19 +57,22 @@
             headers: {
                 'Content-Type': 'application/json',
                 "X-CSRFToken": csrf,
-            },  
+            },
+            body: JSON.stringify({
+              user
+            }),  
         });
 
         if(!response.ok){
             error_message = "Error editing user";
             success_message = '';
+            isLoading = false;
         }else{
             error_message = "";
             success_message = 'User edited successfully';
+            isLoading = false;
         }
 
-        // const data = await response.json();
-        // console.log(data.message);
     }
 
     //email and phone validation
@@ -69,46 +86,42 @@
         return phone_regex.test(phone);
     }
 
+    
+
 </script>
 
-<main>
+<main class="center-container">
     <button on:click={() => push('/dashboard')}>Dashboard</button>
-    
-    <h1>Edit User</h1>
-    <button on:click= {() => fetchUser(user_id)}>Fetch User</button>
-    
+        
     {#if error_message != ''}
         <p class="error-message">{error_message}</p>
     {:else if success_message != ''}
         <p class="success-message">{success_message}</p>
     {/if}
 
-    {#if Object.keys(user).length > 0}
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <p class="user-list user-item" on:click={() => select_user(user)}>
-            {user.email} 
-        </p>
-    {:else}
-        <p>No User found</p>
+    {#if isLoading}
+        <div class="center-container">
+            <Circle2 size="64" />
+        </div>
     {/if}
 
-    {#if selected_user !== null}
+    {#if user_data !== null}
     <form on:submit|preventDefault={EditUser}> 
         <h1>Edit User</h1>
         <hr/>
         <label>
             <label>
-                Name: <input type="text" bind:value={selected_user.name} required />
+                Name: <input type="text" bind:value={user['name']} required />
             </label>
 
-            Email: <input type="text" bind:value={selected_user.email} required />
-            {#if selected_user.email && !validate_email(selected_user.email)}
+            Email: <input type="text" bind:value={user['email']} required />
+            {#if user['email'] && !validate_email(user['email'])}
                 <p class="error-message">Invalid email</p>
             {/if}
         </label>
         <label>
-            Phone: <input bind:value={selected_user.phone_number} maxlength="13" required />
-            {#if selected_user.phone_number && !validate_phone(selected_user.phone_number)}
+            Phone: <input bind:value={user['phone']} maxlength="13" required />
+            {#if user['phone'] && !validate_phone(user['phone'])}
                 <p class="error-message">Invalid phone number</p>
             {/if}
         </label>
@@ -171,4 +184,13 @@
         font-size: 14px;
         margin-top: 4px;
     }
+
+    .center-container {
+        display: flex;
+        flex-direction: column; /* Center vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        
+      }
+    
 </style>

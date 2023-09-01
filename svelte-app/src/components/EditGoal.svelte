@@ -1,6 +1,10 @@
 <script>
     import {push} from 'svelte-spa-router';
 
+    import { onMount } from 'svelte';
+    import { Circle2 } from 'svelte-loading-spinners';
+
+    let isLoading = false;
     let goals = [];
 
     let timezones = [];
@@ -23,26 +27,33 @@
     };
 
     async function fetch_timezones(){
-        
+        isLoading = true;
         const response = await fetch(`/api/get_timezones`, myInit);
 
         if(response.ok){
             timezones = await response.json();
+            isLoading = false;
         }else{
             error_message = "An error occurred fetching timezones";
             success_message = '';
+            isLoading = false;
         }
         
     }
 
+    fetch_timezones()
+
     async function fetchGoals() {
+        isLoading = true;
         const response = await fetch(`/api/get_goals`, myInit);
         
         if(response.ok){
             goals = await response.json();
+            isLoading = false;
         }else{
             error_message = "An error occurred fetching goals";
             success_message = '';
+            isLoading = false;
         }
     }
 
@@ -51,26 +62,30 @@
     }
 
     async function EditGoal() {
+        isLoading = true;
+        const goal_data = selected_goal
+        alert(JSON.stringify(goal_data))
         let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch('/api/edit_goal', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                "X-CSRFToken": csrf,
             }, 
-            body: JSON.stringify(selected_goal)
+            body: JSON.stringify({goal_data})
         });
 
         if(!response.ok){
             error_message = "Error editing goal";
             success_message = '';
+            isLoading = false;
         }else{
             error_message = '';
             success_message = 'Goal edited successfully';
+            isLoading = false;
         }
 
-        // const data = await response.json();
-        // console.log(data.message);
-    }
+   }
 
     function handleInput(event) {
     let inputValue = parseInt(event.target.value);
@@ -79,15 +94,23 @@
     selected_goal.report_frequency = Math.min(Math.max(inputValue, 1), 365);
   }
 
-    fetch_timezones()
+
+  onMount(() => {
+          // Reset isLoading state when the component is mounted
+          isLoading = false;
+        });
 </script>
 
-<main>
+<main >
     <button on:click={() => push('/dashboard')}>Dashboard</button> 
     
     <h1>Edit Goals</h1>
-    
-    <button on:click= {fetchGoals}>Fetch Goals</button>
+    {#if isLoading}
+        <div class="center-container">
+            <Circle2 size="64" />
+        </div>
+    {/if}
+    <button  on:click= {fetchGoals}>Fetch Goals</button>
 
     {#if goals.length > 0}
         <ul class="goal-list">
@@ -207,4 +230,13 @@
         font-size: 14px;
         margin-top: 4px;
     }
+
+    .center-container {
+        display: flex;
+        flex-direction: column; /* Center vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        
+    }
+
 </style>

@@ -1,6 +1,12 @@
 <script>
     import {push} from 'svelte-spa-router';
+    
+    import { onMount } from 'svelte';
+    import { Circle2 } from 'svelte-loading-spinners';
+
     import {PDFDocument, StandardFonts, rgb} from 'pdf-lib';
+
+    let isLoading = false;
 
     let user_data = null;
     let goals = [];
@@ -27,25 +33,31 @@
 
     async function fetchGoals() {
 
-       
+        isLoading = true;
         // Get the current user
         const response = await fetch(`/api/user_data`, myInit);
 
         if(response.ok){
             user_data = await response.json();
+            isLoading = false;
         }else{
             error_message = "An error occurred fetching user";
             success_message = '';
+            isLoading = false;
         }
 
         if(user_data)
         {
+            isLoading = true;
+
             const response = await fetch('/api/get_goals', myInit);
 
             if(response.ok){
                 goals = await response.json();
+                isLoading = false;
             }else{
                 error_message = "An error occurred fetching user";
+                isLoading = false;
             }
         }
     }
@@ -57,6 +69,9 @@
 
     // Define a function to generate the PDF document
     async function generatePDF(reportText, selectedGoal) {
+    
+      isLoading = true;
+
       const pdfDoc = await PDFDocument.create();
       const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman);
       const maxPageHeight = 841.89; // Maximum page height
@@ -121,25 +136,31 @@
         currentHeight += 10; // Additional space between lines
       }
 
+      isLoading = false;
+
       return pdfDoc;
     }
 
 
     async function FetchReport() {
+        
+        isLoading = true;
 
         // Get the current user
         const response = await fetch(`/api/user_data`, myInit);
 
         if(response.ok){
             user_data = await response.json();
-            alert(user_data)
+            isLoading = false;
         }else{
             error_message = "An error occurred fetching timezones";
             success_message = '';
+            isLoading = false;
         }
 
         if(user_data)
         {
+            isLoading = true;
             const response = await fetch(`/api/get_report/${selected_goal.id}`); //, {method: 'GET', headers: {'Content-Type': 'application/json'}});
 
             if(response.ok)
@@ -151,15 +172,24 @@
                 pdfDataUri = URL.createObjectURL(new Blob([pdfBytes], {type: 'application/pdf'}));
                 document_name = selected_goal.goal_title + " report.pdf";
                 error_message = "";
+
+                const reportDiv = document.getElementById('report');
+                reportDiv.scrollIntoView({ behavior: 'smooth' });
+      
+                isLoading = false;
             }
             else
             {
                 error_message = 'Error fetching report';
+                isLoading = false;
             }
-        }
+        }      
         
-
     }
+    onMount(() => {
+            // Reset isLoading state when the component is mounted
+            isLoading = false;
+          });
 </script>
 
 <main>
@@ -169,7 +199,14 @@
         <p class="error-message">{error_message}</p>
     {/if}
 
-    <h1>View Goal Analysis Report</h1>
+    <h3>View Goal Analysis Report</h3>
+    
+    {#if isLoading}
+        <div class="center-container">
+            <Circle2 size="64" />
+        </div>
+    {/if}
+
     <button on:click= {fetchGoals}>Fetch Goals</button>
 
     {#if goals.length > 0}
@@ -195,8 +232,8 @@
     {/if}
     
     {#if selected_goal !== null}
-    <h1>Report</h1>
-        <div class="report">
+    <h3>Report</h3>
+        <div id="report" class="report">
             {#if pdfDataUri}
                 <a href={pdfDataUri} download={document_name} >Download PDF</a>
                 <!-- svelte-ignore a11y-missing-attribute -->
@@ -216,11 +253,10 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	h3 {
 		color: #ff3e00;
 		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+		font-weight: 400;
 	}
 
 	@media (min-width: 640px) {
@@ -270,7 +306,7 @@
 
     .pdf-frame {
         width: 100%;
-        height: 100%; /* Adjust the height as needed */
+        height: 50vh; /* Adjust the height as needed */
         border: none;
     }
 
@@ -280,4 +316,12 @@
             width: fit-content;
         }
     }
+
+     .center-container {
+        display: flex;
+        flex-direction: column; /* Center vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        
+      }
 </style>
