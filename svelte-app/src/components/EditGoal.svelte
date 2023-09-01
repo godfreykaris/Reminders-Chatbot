@@ -13,13 +13,15 @@
     let headers = new Headers();
 
     headers.append('Accept', 'application/json');
+    let csrf = document.getElementsByName("csrf-token")[0].content;
+    headers.append("X-CSRFToken", csrf);
 
     const myInit = {
       method: "GET",
-      mode: 'cors',
-      credentials: 'include',
+      credentials: "same-origin",
       headers: headers,
     };
+
     async function fetch_timezones(){
         
         const response = await fetch(`/api/get_timezones`, myInit);
@@ -49,6 +51,7 @@
     }
 
     async function EditGoal() {
+        let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch('/api/edit_goal', {
             method: 'POST',
             headers: {

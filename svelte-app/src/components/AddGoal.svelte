@@ -20,11 +20,12 @@
         let headers = new Headers();
 
         headers.append('Accept', 'application/json');
+        let csrf = document.getElementsByName("csrf-token")[0].content;
+        headers.append("X-CSRFToken", csrf);
 
         const myInit = {
           method: "GET",
-          mode: 'cors',
-          credentials: 'include',
+          credentials: "same-origin",
           headers: headers,
         };
 
@@ -49,12 +50,15 @@
             time_zone,
             contact_choice
         };
-    
+
+        let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch('/api/add_goal', {
             method: 'POST',
+            credentials: 'same-origin',
             headers: {
-                'Content-Type': 'application/json'
-            },
+                'Content-Type': 'application/json',
+                "X-CSRFToken": csrf,
+            }, 
             body: JSON.stringify(formData)
         });
 

@@ -6,6 +6,8 @@ import logging
 
 # Third-Party Library Imports
 from flask import Flask, jsonify, request, render_template
+from flask_login import LoginManager, UserMixin, current_user, login_required,  login_user, logout_user
+from flask_wtf.csrf import CSRFProtect
 from twilio.twiml.messaging_response import MessagingResponse
 import pytz
 import requests
@@ -31,10 +33,26 @@ app = Flask(__name__)
 
 app.config['BASE_URL'] = 'http://localhost:5000'
 
+app.config.update(
+    DEBUG=True,
+    SECRET_KEY="secret_sauce",
+    SESSION_COOKIE_HTTPONLY=True,
+    REMEMBER_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Strict",
+)
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.session_protection = "strong"
+
+csrf = CSRFProtect(app)
+
 # Set the static folder relative to the project directory
 static_folder_path = os.path.join(os.path.dirname(__file__), 'svelte-app', 'public')
-# static_folder_path = os.path.join(os.path.dirname(__file__), 'templates', 'static')
+#static_folder_path = os.path.join(os.path.dirname(__file__), 'templates', 'static')
 app.static_folder = static_folder_path
+
+
 
 # Initialize the database connection using the configuration from 'config.json'
 database_initializer = DatabaseInitializer('config.json')
@@ -42,6 +60,48 @@ database_initializer = DatabaseInitializer('config.json')
 @app.route('/')
 def index():
     return render_template('index.html')
+
+class User(UserMixin):
+    def __init__(self, id):
+        self.id = id
+
+    def get_id(self):
+        return str(self.id)
+
+@login_manager.user_loader
+def load_user(id: int):
+    user_handler = UserHandler(database_initializer)
+    response = user_handler.get_user(id)
+    user = response.json['user_info']
+    if user:
+        user_model = User(id=user['id'])  # Assuming 'id' is a property of the User class
+        return user_model
+    return None
+    
+
+
+      
+@app.route("/api/user_data", methods=["GET"])
+def user_data():
+    try:
+        user_handler = UserHandler(database_initializer)
+        return user_handler.get_user(current_user.id) 
+    except Exception as e:
+        # Handle any exceptions that may occur and return as JSON
+       return jsonify({'error': str(e)}), 500
+
+@app.route("/api/getsession")
+def check_session():
+    if current_user.is_authenticated:
+        return jsonify({"login": True})
+
+    return jsonify({"login": False})
+
+@app.route("/api/logout")
+@login_required
+def logout():
+    logout_user()
+    return jsonify({"logout": True})
 
 # Define a route for user registration
 @app.route('/api/register', methods=['POST'])
@@ -62,17 +122,29 @@ def login():
         # Create an instance of UserLogin with the database connection
         user_authenticator = UserLogin(database_initializer=database_initializer)
         # Call the login_user method to handle user login
-        return user_authenticator.login_user()
+        result = user_authenticator.login_user()
+        status = result.status_code
+        if status == 200:
+            response_data = result.json
+            # Access specific properties from the response
+            user_id = response_data['user_id']
+            # Use Flask-Login's login_user function to set the current_user
+            login_user(User(int(user_id)))
+
+        return result
     except Exception as e:
          # Handle any exceptions that may occur and return as JSON
         return jsonify({'error': str(e)}), 500
     
 # Define a route to a user
-@app.route('/api/user/retrieve_user', methods=['POST'])
+@app.route('/api/user/retrieve_user', methods=['GET'])
 def retrieve_user():
     try:
+        # Parse the user's input from the request JSON
+        user_id = request.json['user_id']
+
         user_handler = UserHandler(database_initializer)
-        return user_handler.get_user()
+        return user_handler.get_user(user_id)
 
     except Exception as e:
          # Handle any exceptions that may occur and return as JSON
@@ -203,6 +275,7 @@ def webhook():
     
 # Define a route for scheduling user goals
 @app.route('/api/schedule_goal', methods=['POST'])
+@login_required
 def schedule_user_goal():
     try:
         # Create an instance of GoalScheduler with the username of the os given by 'whoami' command
@@ -218,6 +291,7 @@ def schedule_user_goal():
 
 # Define a route for scheduling user goals
 @app.route('/api/schedule_report', methods=['POST'])
+@login_required
 def schedule_user_report():
     try:
         # Create an instance of ReportScheduler with the username of the os given by 'whoami' command
@@ -233,6 +307,7 @@ def schedule_user_report():
 
 # Define a route for getting an anylysis report for user data from ChatGPT to be sent via message
 @app.route('/api/chat/generate_report', methods=['POST'])
+@login_required
 def get_chatgpt_analysis_message_report():
     try:
         # Parse the user's input from the request JSON
@@ -340,6 +415,7 @@ def serialize_time_to_str(time_obj):
 
 #get timezones
 @app.route('/api/get_timezones', methods=['GET'])
+@login_required
 def get_timezones():
     timezones = pytz.all_timezones
     return jsonify(timezones)
@@ -353,10 +429,12 @@ def validate_timezone(time_zone):
         return False
 
 # goal data analysis report
-@app.route('/api/get_report/<int:id>/<int:user_id>', methods=['GET'])
-def get_report(id, user_id):
+@app.route('/api/get_report', methods=['GET'])
+@login_required
+def get_report(id):
     try:
-
+        user_id = current_user.id
+        
         if not user_id or not id:
             return jsonify(message="Invalid user or goal id"), 400
 
@@ -388,6 +466,7 @@ def get_report(id, user_id):
 
 #add goal
 @app.route('/api/add_goal', methods=['POST'])
+@login_required
 def add_goal():
     
     data = request.get_json()
@@ -475,6 +554,7 @@ def add_goal():
 
 #edit goal
 @app.route('/api/edit_goal', methods=['POST'])
+@login_required
 def edit_goal():
     data = request.get_json()
     user_id = data.get('user_id')
@@ -560,6 +640,7 @@ def edit_goal():
     
 # Delete a goal
 @app.route('/api/delete_goal', methods=['POST'])
+@login_required
 def delete_goal():
     data = request.get_json()
     goal_id = data.get('id')
@@ -576,8 +657,7 @@ def delete_goal():
         user_goal = cursor.fetchone()
        
 
-        # Create an ins
-        # tance of CronJobManager
+        # Create an instance of CronJobManager
         cron_manager = CronJobManager(user=True)
         # Remove report cron job
         comment_report = f'{user_goal[1]}-{user_goal[0]}-report'
@@ -608,6 +688,7 @@ def delete_goal():
 
 #fetch goals
 @app.route('/api/get_goals', methods=['GET'])
+@login_required
 def get_goals():
     user_id = 6
     
@@ -654,9 +735,12 @@ def get_goals():
 
 
 
-@app.route('/api/get_user/<int:user_id>', methods=['GET'])
-def get_user(user_id):
-        
+@app.route('/api/get_user', methods=['GET'])
+@login_required
+def get_user():
+    
+    user_id = current_user.id
+
     if not isinstance(user_id, int) or user_id <= 0:
         return jsonify(message="Invalid user id")
     
@@ -729,10 +813,11 @@ def get_users():
 
 
 @app.route('/api/edit_user', methods=['POST'])
+@login_required
 def edit_user():
     data = request.get_json()
     
-    id = data.get('id')
+    id = current_user.id
     email = data.get('email')
     phone_number = data.get('phone_number')    
     
@@ -781,9 +866,9 @@ def edit_user():
     
 
 @app.route('/api/delete_user', methods=['POST'])
+@login_required
 def delete_user():
-    data = request.get_json()
-    user_id = data.get('id')
+    user_id = current_user.id
     
     if not isinstance(user_id, int) or user_id <= 0:
         return jsonify(message="Invalid goal ID"), 400

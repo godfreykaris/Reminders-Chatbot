@@ -3,17 +3,18 @@
 
     let goals = [];
     let error_message = '';
-
-    let user_id = 6;
-
+    
     async function FetchGoals() {
         try {
+            let csrf = document.getElementsByName("csrf-token")[0].content;
+
             const response = await fetch(`/api/view_goals`, {
                 method: 'POST',
+                credentials: 'same-origin',
                 headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ "user_id": user_id })
+                    'Content-Type': 'application/json',
+                    "X-CSRFToken": csrf,
+                }, 
             });
 
             if (response.ok) {

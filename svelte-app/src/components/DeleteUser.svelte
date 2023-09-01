@@ -8,8 +8,20 @@
     let error_message = '';
     let success_message = '';
 
+    let headers = new Headers();
+
+    headers.append('Accept', 'application/json');
+    let csrf = document.getElementsByName("csrf-token")[0].content;
+    headers.append("X-CSRFToken", csrf);
+
+    const myInit = {
+      method: "GET",
+      credentials: "same-origin",
+      headers: headers,
+    };
+
     async function fetchUsers() {
-        const response = await fetch('/api/get_users');
+        const response = await fetch('/api/get_users', myInit);
 
         if(response.ok){
             users = await response.json();
@@ -36,11 +48,14 @@
         if(!confirm_delete)
             return
 
+        let csrf = document.getElementsByName("csrf-token")[0].content;
         const response = await fetch('/api/delete_user', {
             method: 'POST',
+            credentials: 'same-origin',
             headers: {
-                'Content-Type': 'application/json'
-            }, 
+                'Content-Type': 'application/json',
+                "X-CSRFToken": csrf,
+            },  
             body: JSON.stringify({id: selected_user.id})
         });
 

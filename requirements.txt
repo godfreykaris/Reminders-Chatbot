@@ -14,6 +14,8 @@ croniter==1.4.1
 deprecation==2.1.0
 Flask==2.3.3
 Flask-Cors==4.0.0
+Flask-Login==0.6.2
+Flask-WTF==1.1.1
 frozenlist==1.4.0
 gotrue==1.0.4
 h11==0.14.0
@@ -51,4 +53,5 @@ typing_extensions==4.7.1
 urllib3==2.0.4
 websockets==10.4
 Werkzeug==2.3.7
+WTForms==3.0.1
 yarl==1.9.2

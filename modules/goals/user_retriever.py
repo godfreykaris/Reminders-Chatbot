@@ -4,13 +4,9 @@ class UserHandler:
     def __init__(self, database_initializer):
         self.database_initializer = database_initializer
 
-    def get_user(self):
+    def get_user(self, user_id):
         try:
-            # Get user ID from the request parameters
-            data = request.get_json()
-            user_id = int(data.get('user_id'))
-
-
+           
             if not user_id:
                 return jsonify({'message': 'Invalid user ID'}), 400
 
@@ -18,22 +14,23 @@ class UserHandler:
             cursor = database_connection.cursor()
 
             # Retrieve the user's information based on user_id
-            cursor.execute("SELECT name, phone_number FROM users WHERE id = %s;", (user_id,))
+            cursor.execute("SELECT id, name, phone_number FROM users WHERE id = %s;", (user_id,))
             user_data = cursor.fetchone()
 
             if user_data:
                 # If the user exists, return their information as JSON
                 user_info = {
-                    'name': user_data[0],
-                    'phone': user_data[1],
+                    'id': user_data[0],
+                    'name': user_data[1],
+                    'phone': user_data[2],
                 }
-                return jsonify({'message': 'User retrieved successfully', 'user_info': user_info})
+                return jsonify({'message': 'User retrieved successfully', 'user_info': user_info, 'status': 200})
             else:
-                return jsonify({'message': 'User not found'}), 404
+                return jsonify({'message': 'User not found', 'status': 404}), 404
 
         except Exception as e:
             # Handle database errors or other exceptions
-            return jsonify({'message': str(e), 'error': str(e)}), 500
+            return jsonify({'message': str(e), 'error': str(e), 'status': 500}), 500
         finally:
             cursor.close()
             database_connection.close()
