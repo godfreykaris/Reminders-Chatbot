@@ -128,7 +128,7 @@ h1 {
     <br>
     <button on:click={handleRegister}>Register</button>  
     <br>
-    <a on:click={() => push('/login')}>Already a member?</a>
+    <a  href={null} on:click={() => push('/login')}>Already a member?</a>
 </form>
 </main>
 

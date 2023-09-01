@@ -1,57 +1,72 @@
-# Import the necessary Flask modules
+# Standard Library Imports
+from datetime import time
+import os
+import threading
 import logging
-from flask import Flask, jsonify, request
+
+# Third-Party Library Imports
+from flask import Flask, jsonify, request, render_template
+from twilio.twiml.messaging_response import MessagingResponse
 import pytz
 import requests
+import psycopg2.extras  # If psycopg2 is a third-party library
 
-import threading
-
-
-from twilio.twiml.messaging_response import MessagingResponse
-
-
-from modules.chatbot.chatgpt_reponse import ChatGPTResponse
-
-# Import custom modules for database initialization, user registration, login, messaging, and goal scheduling
+# Custom Module Imports
 from modules.database_initializer import DatabaseInitializer
+from modules.register_user import UserRegistration
+from modules.login import UserLogin
+from modules.messaging.send_message import MessageSender
 from modules.goals.goal_data_retriever import UserGoalData
 from modules.goals.goal_data_store import StoreGoalData
 from modules.goals.goal_retriever import UserGoal
 from modules.goals.cron_manager import CronJobManager
 from modules.goals.user_retriever import UserHandler
-from modules.messaging.send_message import MessageSender
-from modules.register_user import UserRegistration
-from modules.login import UserLogin
 from modules.goals.scheduler import GoalScheduler, ReportScheduler
-
-import psycopg2.extras
-from datetime import time
-
+from modules.chatbot.chatgpt_reponse import ChatGPTResponse
 from report_cron_job import ReportGenerator
 
 
 # Create a Flask application
 app = Flask(__name__)
 
+app.config['BASE_URL'] = 'http://localhost:5000'
+
+# Set the static folder relative to the project directory
+static_folder_path = os.path.join(os.path.dirname(__file__), 'svelte-app', 'public')
+# static_folder_path = os.path.join(os.path.dirname(__file__), 'templates', 'static')
+app.static_folder = static_folder_path
+
 # Initialize the database connection using the configuration from 'config.json'
 database_initializer = DatabaseInitializer('config.json')
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 # Define a route for user registration
 @app.route('/api/register', methods=['POST'])
 def register():
-    # Create an instance of UserRegistration with the database connection
-    user_registrar = UserRegistration(database_initializer=database_initializer)
-    # Call the register_user method to handle user registration
-    user_registrar.register_user()
-
+    try:
+        # Create an instance of UserRegistration with the database connection
+        user_registrar = UserRegistration(database_initializer=database_initializer)
+        # Call the register_user method to handle user registration
+        return user_registrar.register_user()
+    except Exception as e:
+         # Handle any exceptions that may occur and return as JSON
+        return jsonify({'error': str(e)}), 500
+    
 # Define a route for user login
 @app.route('/api/login', methods=['POST'])
 def login():
-    # Create an instance of UserLogin with the database connection
-    user_authenticator = UserLogin(database_initializer=database_initializer)
-    # Call the login_user method to handle user login
-    user_authenticator.login_user()
-
+    try:
+        # Create an instance of UserLogin with the database connection
+        user_authenticator = UserLogin(database_initializer=database_initializer)
+        # Call the login_user method to handle user login
+        return user_authenticator.login_user()
+    except Exception as e:
+         # Handle any exceptions that may occur and return as JSON
+        return jsonify({'error': str(e)}), 500
+    
 # Define a route to a user
 @app.route('/api/user/retrieve_user', methods=['POST'])
 def retrieve_user():
@@ -152,12 +167,12 @@ def webhook():
     }
 
     store_goal_data = StoreGoalData(database_initializer=database_initializer)
-    store_data_url = "http://localhost:5000/api/store_feedback"
+    store_data_url = f"{app.config['BASE_URL']}/api/store_feedback"
 
     data_thread = threading.Thread(target=store_goal_data.store_user_data_request, args=(store_data_url, goal_data, ))
     
     # Generate a response from ChatGPT
-    chatgpt_url = "http://localhost:5000/api/chat/chat_with_user"
+    chatgpt_url = f"{app.config['BASE_URL']}/api/chat/chat_with_user"
    
     # JSON payload
     chatgpt_payload = {"user_input": "Goal:" + goal + ", Report:" + report}
@@ -359,9 +374,7 @@ def get_report(id, user_id):
         report = report_generator.generate_report(user, goal, goal_data)
 
 
-        # Now you have the report as a string, and you can do whatever you want with it
-        print(report)
-
+        
         logging.info(f'Script executed successfully for user {user_id}')
     
         if report:

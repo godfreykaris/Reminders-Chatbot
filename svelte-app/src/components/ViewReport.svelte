@@ -1,12 +1,13 @@
 <script>
     import {push} from 'svelte-spa-router';
-    import {PDFDocument} from 'pdf-lib';
+    import {PDFDocument, StandardFonts, rgb} from 'pdf-lib';
 
     let goals = [];
 
     let selected_goal = null;
 
     let error_message = '';
+    let document_name = '';
 
     let pdfDataUri = null;
 
@@ -26,36 +27,94 @@
         await FetchReport();
     }
 
+    // Define a function to generate the PDF document
+    async function generatePDF(reportText, selectedGoal) {
+      const pdfDoc = await PDFDocument.create();
+      const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman);
+      const maxPageHeight = 841.89; // Maximum page height
+
+      // Add a page to the document with A4 dimensions
+      let currentPage = pdfDoc.addPage([595.28, maxPageHeight]);
+      const { width, height } = currentPage.getSize();
+      let fontSize = 20;
+
+      currentPage.drawText("Report For: " + selectedGoal.goal_title, {
+        x: 50,
+        y: height - 30,
+        size: fontSize,
+        font: timesRomanFont,
+        color: rgb(0, 0.53, 0.71),
+      });
+
+      const lines = reportText.split('\n'); // Split the text into lines based on '\n'
+
+      let lineHeight = 16;
+      let currentHeight = 60;
+      fontSize = 18;
+      const textColor = rgb(0, 0, 0); // Set your desired text color
+
+      for (let i = 0; i < lines.length; i++) {
+        let line = lines[i];
+
+        let remainingText = line;
+        while (remainingText.length > 0) {
+          if (currentHeight >= maxPageHeight - 40) {
+            // Add a new page if the current page is full
+            currentPage = pdfDoc.addPage([595.28, maxPageHeight]);
+            currentHeight = 30; // Reset the currentHeight for the new page
+          }
+
+          const maxChars = 60;
+          let lineText = remainingText.substring(0, maxChars);
+          remainingText = remainingText.substring(maxChars);
+          // Check if the last character is not a whitespace, full stop (period), or newline character ('\n')
+          if (!/[\s.\n]$/.test(lineText.charAt(lineText.length - 1))) {
+            // Check if the character after the last character is also not a whitespace, full stop (period), or newline character ('\n')
+            if (!/[\s.\n]$/.test(remainingText.charAt(0))) {
+              // Add a hyphen at the end of lineText if it's not too short
+              if (lineText.length > 55) {
+                lineText += '-';
+                remainingText = remainingText.substring(0);
+              }
+            }
+          }
+
+          currentPage.drawText(lineText, {
+            x: 50,
+            y: maxPageHeight - currentHeight,
+            size: fontSize,
+            font: timesRomanFont,
+            color: textColor,
+          });
+
+          currentHeight += lineHeight;
+        }
+
+        currentHeight += 10; // Additional space between lines
+      }
+
+      return pdfDoc;
+    }
+
+
     async function FetchReport() {
         const response = await fetch(`/api/get_report/${selected_goal.id}/${selected_goal.user_id}`); //, {method: 'GET', headers: {'Content-Type': 'application/json'}});
 
-        if(response.ok){
+        if(response.ok)
+        {  
             const reportText = await response.text();
-
-            //create a new pdf document
-            const pdfDoc = await PDFDocument.create();
-
-            //add a page to the document
-            const page = pdfDoc.addPage([600, 400]);
-
-            //embed the text content into the 
-            page.drawText(reportText, {
-                x: 50,
-                y: 350,
-                size: 12, 
-            });
-
+            const pdfDoc = await generatePDF(reportText, selected_goal);
             //generate a data uri for the PDF
             const pdfBytes = await pdfDoc.save();
             pdfDataUri = URL.createObjectURL(new Blob([pdfBytes], {type: 'application/pdf'}));
-
+            document_name = selected_goal.goal_title + " report.pdf";
             error_message = "";
-        }else{
+        }
+        else
+        {
             error_message = 'Error fetching report';
         }
 
-        // const data = await response.json();
-        // console.log(data.message);
     }
 </script>
 
@@ -95,6 +154,7 @@
     <h1>Report</h1>
         <div class="report">
             {#if pdfDataUri}
+                <a href={pdfDataUri} download={document_name} >Download PDF</a>
                 <!-- svelte-ignore a11y-missing-attribute -->
                 <iframe src={pdfDataUri} class="pdf-frame" aria-label="PDF Report"></iframe>
             {:else}
