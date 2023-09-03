@@ -1,3 +1,94 @@
+from flask import jsonify, request
+
+class UserHandler:
+    def __init__(self, database_initializer):
+        self.database_initializer = database_initializer
+
+    def get_user(self, user_id):
+        try:
+           
+            if not user_id:
+                return jsonify({'message': 'Invalid user ID'}), 400
+
+            database_connection = self.database_initializer.get_database_connection()
+            cursor = database_connection.cursor()
+
+            # Retrieve the user's information based on user_id
+            cursor.execute("SELECT id, name, phone_number FROM users WHERE id = %s;", (user_id,))
+            user_data = cursor.fetchone()
+
+            if user_data:
+                # If the user exists, return their information as JSON
+                user_info = {
+                    'id': user_data[0],
+                    'name': user_data[1],
+                    'phone': user_data[2],
+                }
+                return jsonify({'message': 'User retrieved successfully', 'user_info': user_info, 'status': 200})
+            else:
+                return jsonify({'message': 'User not found', 'status': 404}), 404
+
+        except Exception as e:
+            # Handle database errors or other exceptions
+            return jsonify({'message': str(e), 'error': str(e), 'status': 500}), 500
+        finally:
+            cursor.close()
+            database_connection.close()
+
+
+    def get_user_by_phone(self, phone):
+        try:
+            
+            if not phone:
+                return jsonify({'message': 'Invalid user phone number', 'status': 400})
+
+            database_connection = self.database_initializer.get_database_connection()
+            cursor = database_connection.cursor()
+
+            # Retrieve the user's information based on user_id
+            cursor.execute("SELECT id FROM users WHERE phone_number = %s;", (phone,))
+            user_data = cursor.fetchone()
+
+            if user_data:
+                # If the user exists, return their information as JSON
+                user_info = {
+                    'id': user_data[0],
+                }
+                return jsonify({'message': 'User retrieved successfully', 'user_info': user_info, 'status': 200})
+            else:
+                return jsonify({'message': 'User not found', 'status': 404, 'phone': phone})
+
+        except Exception as e:
+            # Handle database errors or other exceptions
+            return jsonify({'message': str(e), 'error': str(e), 'status': 500, 'phone': phone})
+        finally:
+            cursor.close()
+            database_connection.close()
+
+import json
+import psycopg2
+
+class DatabaseInitializer:
+    def __init__(self, credentials_file_path):
+        self.credentials_file_path = credentials_file_path
+        
+    def get_credentials(self):
+        with open(self.credentials_file_path, "r") as config_file:
+            config = json.load(config_file)
+        return config
+    
+    def get_database_connection(self):
+        credentials = self.get_credentials()
+    
+        conn = psycopg2.connect(
+            host=credentials["db_host"],
+            port=credentials["db_port"],
+            database=credentials["db_name"],
+            user=credentials["db_user"],
+            password=credentials["db_password"]
+        )
+        
+        return conn
 
 
 import requests
@@ -170,47 +261,47 @@ from modules.goals.scheduler import GoalScheduler
 
 
 
-import requests
+# import requests
 
-# Define the URL of your Flask application
-flask_url = "http://127.0.0.1:5000"  # Update with your actual Flask app URL
+# # Define the URL of your Flask application
+# flask_url = "http://127.0.0.1:5000"  # Update with your actual Flask app URL
 
-# Define the data you want to send in the POST request
-data = {
-    "user_id": 6,
-    "report_frequency": 10,
-    "goal_title": "Chess",
-    "goal_description": "I wand to be a grnd master",
-    "time_of_day": "12:31",
-    "time_zone": "America/New_York",
-    "contact_choice": "whatsapp"
-}
+# # Define the data you want to send in the POST request
+# data = {
+#     "user_id": 6,
+#     "report_frequency": 10,
+#     "goal_title": "Chess",
+#     "goal_description": "I wand to be a grnd master",
+#     "time_of_day": "12:31",
+#     "time_zone": "America/New_York",
+#     "contact_choice": "whatsapp"
+# }
 
-# Define the data you want to send in the POST request
-data1 = {
-    "user_id": 6,
-    "id": 30,
-    "report_frequency": 10,
-    "goal_title": "Tea picking",
-    "goal_description": "I like to pick tea",
-    "time_of_day": "13:31",
-    "time_zone": "America/New_York",
-    "contact_choice": "whatsapp"
-}
+# # Define the data you want to send in the POST request
+# data1 = {
+#     "user_id": 6,
+#     "id": 30,
+#     "report_frequency": 10,
+#     "goal_title": "Tea picking",
+#     "goal_description": "I like to pick tea",
+#     "time_of_day": "13:31",
+#     "time_zone": "America/New_York",
+#     "contact_choice": "whatsapp"
+# }
 
-# Send an HTTP POST request to the /add_goal route
-# response = requests.post(f"{flask_url}/api/edit_goal", json=data1)
+# # Send an HTTP POST request to the /add_goal route
+# # response = requests.post(f"{flask_url}/api/edit_goal", json=data1)
 
-# Send an HTTP POST request to the /add_goal route
-response = requests.post(f"{flask_url}/api/add_goal", json=data)
+# # Send an HTTP POST request to the /add_goal route
+# response = requests.post(f"{flask_url}/api/add_goal", json=data)
 
-# Check the response
-if response.status_code == 200:
-    print("Goal submitted successfully")
-    print(response.json())
-else:
-    print(f"Error: {response.status_code}")
-    print(response.json())
+# # Check the response
+# if response.status_code == 200:
+#     print("Goal submitted successfully")
+#     print(response.json())
+# else:
+#     print(f"Error: {response.status_code}")
+#     print(response.json())
 
 
 
@@ -319,3 +410,13 @@ else:
 # else:
 #     # Error response
 #     print(f"Error: {response.status_code}, {response.text}")
+
+# Initialize the database connection using the configuration from 'config.json'
+database_initializer = DatabaseInitializer('config.json')
+# Parse the user's input from the request JSON
+user_id =6
+user_handler = UserHandler(database_initializer)
+response =  user_handler.get_user(user_id)
+
+print(response)
+

@@ -1,5 +1,6 @@
 # Standard Library Imports
 from datetime import time
+import json
 import os
 import threading
 import logging
@@ -7,7 +8,7 @@ import logging
 # Third-Party Library Imports
 from flask import Flask, jsonify, request, render_template
 from flask_login import LoginManager, UserMixin, current_user, login_required,  login_user, logout_user
-from flask_wtf.csrf import CSRFProtect
+from flask_wtf.csrf import CSRFProtect,  generate_csrf
 from twilio.twiml.messaging_response import MessagingResponse
 import pytz
 import requests
@@ -53,7 +54,6 @@ static_folder_path = os.path.join(os.path.dirname(__file__), 'svelte-app', 'publ
 app.static_folder = static_folder_path
 
 
-
 # Initialize the database connection using the configuration from 'config.json'
 database_initializer = DatabaseInitializer('config.json')
 
@@ -72,20 +72,25 @@ class User(UserMixin):
 def load_user(id: int):
     user_handler = UserHandler(database_initializer)
     response = user_handler.get_user(id)
-    user = response.json['user_info']
+    user = json.loads(response)
+    user_data =  user.get('user_info')
+
     if user:
-        user_model = User(id=user['id'])  # Assuming 'id' is a property of the User class
+        user_model = User(id=user_data['id'])  # Assuming 'id' is a property of the User class
         return user_model
     return None
     
-
 
       
 @app.route("/api/user_data", methods=["GET"])
 def user_data():
     try:
         user_handler = UserHandler(database_initializer)
-        return user_handler.get_user(current_user.id) 
+        result = user_handler.get_user(user_id=current_user.id)
+        # Parse the JSON string into a Python dictionary
+        result = json.loads(result)
+        return result, 200
+    
     except Exception as e:
         # Handle any exceptions that may occur and return as JSON
        return jsonify({'error': str(e)}), 500
@@ -137,14 +142,15 @@ def login():
         return jsonify({'error': str(e)}), 500
     
 # Define a route to a user
-@app.route('/api/user/retrieve_user', methods=['GET'])
+@app.route('/api/user/retrieve_user', methods=['POST'])
 def retrieve_user():
     try:
-        # Parse the user's input from the request JSON
-        user_id = request.json['user_id']
+        # Get user ID from the request parameters
+        data = request.get_json()
+        user_id = int(data.get('user_id'))
 
         user_handler = UserHandler(database_initializer)
-        return user_handler.get_user(user_id)
+        return user_handler.get_user(user_id=user_id)
 
     except Exception as e:
          # Handle any exceptions that may occur and return as JSON
@@ -153,10 +159,15 @@ def retrieve_user():
 # Define a route for sending user messages
 @app.route('/api/send_message', methods=['POST'])
 def send_user_message():
+    data = request.get_json()
+    recipient = data.get('recipient')
+    message = data.get('message')
+    message_type = data.get('type')  # 'sms' or 'whatsapp'
+
     # Create an instance of MessageSender
     message_sender = MessageSender()
     # Call the send_message method to handle message sending
-    response = message_sender.send_message()
+    response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
 
     return response
 
@@ -387,8 +398,12 @@ def chat_with_user():
 @app.route('/api/user/retrieve_goal', methods=['POST'])
 def retrieve_user_goal():
     try:
+        data = request.get_json()
+        user_id = int(data.get('user_id'))
+        goal_id = int(data.get('goal_id'))
+    
         user_goal = UserGoal(database_initializer)
-        return user_goal.get_user_goal()
+        return user_goal.get_user_goal(user_id=user_id, goal_id=goal_id)
 
     except Exception as e:
          # Handle any exceptions that may occur and return as JSON
@@ -399,8 +414,12 @@ def retrieve_user_goal():
 @app.route('/api/user/retrieve_goal_data', methods=['POST'])
 def retrieve_user_goal_data():
     try:
+        data = request.get_json()
+        user_id = int(data.get('user_id'))
+        goal_id = int(data.get('goal_id'))
+
         user_goal_data = UserGoalData(database_initializer)
-        return user_goal_data.get_user_goal_data()
+        return user_goal_data.get_user_goal_data(user_id=user_id, goal_id=goal_id)
 
     except Exception as e:
          # Handle any exceptions that may occur and return as JSON
@@ -429,7 +448,7 @@ def validate_timezone(time_zone):
         return False
 
 # goal data analysis report
-@app.route('/api/get_report', methods=['GET'])
+@app.route('/api/get_report/<int:id>', methods=['GET'])
 @login_required
 def get_report(id):
     try:
@@ -438,7 +457,7 @@ def get_report(id):
         if not user_id or not id:
             return jsonify(message="Invalid user or goal id"), 400
 
-        report_generator = ReportGenerator()
+        report_generator = ReportGenerator(database_initializer=database_initializer)
         # Retrieve user information
         user = report_generator.retrieve_user(user_id)
 
@@ -469,8 +488,8 @@ def get_report(id):
 @login_required
 def add_goal():
     
-    data = request.get_json()
-    user_id = data.get('user_id')
+    data = request.get_json().get('goal_data')
+    user_id = current_user.id
     report_frequency = data.get('report_frequency')
     goal_title = data.get('goal_title')
     goal_description = data.get('goal_description')
@@ -478,8 +497,8 @@ def add_goal():
     time_zone = data.get('time_zone')
     contact_choice = data.get('contact_choice')    
     
-    if not isinstance(user_id, int) or user_id <= 0:
-        return jsonify(message="Invalid user ID"), 400
+    if not user_id or not report_frequency or not goal_title or not goal_description or not time_of_day or not time_zone or not contact_choice:
+        return jsonify(message="Invalid user Data"), 400
     
     if not validate_timezone(time_zone):
         return jsonify(message="Invalid timezone"), 400
@@ -556,8 +575,8 @@ def add_goal():
 @app.route('/api/edit_goal', methods=['POST'])
 @login_required
 def edit_goal():
-    data = request.get_json()
-    user_id = data.get('user_id')
+    data = request.get_json().get('goal_data')  
+    user_id = current_user.id    
     goal_id = data.get('id')
     goal_title = data.get('goal_title')
     goal_description = data.get('goal_description')
@@ -566,8 +585,8 @@ def edit_goal():
     contact_choice = data.get('contact_choice')  
     report_frequency = data.get('report_frequency')  
     
-    if not isinstance(goal_id, int) or goal_id <= 0:
-        return jsonify(message="Invalid goal ID"), 400
+    if not user_id or not goal_id or not report_frequency or not goal_title or not goal_description or not time_of_day or not time_zone or not contact_choice:
+        return jsonify(message="Invalid user data"), 400
     
     if not validate_timezone(time_zone):
         return jsonify(message="Invalid timezone"), 400
@@ -815,14 +834,15 @@ def get_users():
 @app.route('/api/edit_user', methods=['POST'])
 @login_required
 def edit_user():
-    data = request.get_json()
-    
+    data = request.get_json().get('user')
+
     id = current_user.id
     email = data.get('email')
-    phone_number = data.get('phone_number')    
+    phone_number = data.get('phone')
+    name = data.get('name')    
     
-    if not isinstance(id, int) or id <= 0:
-        return jsonify(message="Invalid user ID"), 400    
+    if not id or not email or not phone_number or not name:
+        return jsonify(message="Invalid User data"), 400    
     
     
     try:
@@ -844,11 +864,11 @@ def edit_user():
 
         update_query = """
             UPDATE users
-            SET email = %s, phone_number = %s
+            SET email = %s, phone_number = %s, name = %s
             WHERE id = %s
         """
 
-        cursor.execute(update_query, (email, phone_number, id,))
+        cursor.execute(update_query, (email, phone_number, name, id,))
         conn.commit()
 
         cursor.close()
@@ -868,18 +888,19 @@ def edit_user():
 @app.route('/api/delete_user', methods=['POST'])
 @login_required
 def delete_user():
-    user_id = current_user.id
+
+    user_id = request.get_json().get('id')
     
-    if not isinstance(user_id, int) or user_id <= 0:
-        return jsonify(message="Invalid goal ID"), 400
+    if not user_id:
+        return jsonify(message="Invalid user ID"), 400
     
     try:
         conn = database_initializer.get_database_connection()
         cursor = conn.cursor()
 
         # Create a thread to run the deletion process
-        delete_thread = threading.Thread(target=lambda: CronJobManager(user=True).remove_jobs_by_user_id(f"{user_id}-"))
-        delete_thread.start()
+        #delete_thread = threading.Thread(target=lambda: CronJobManager(user=True).remove_jobs_by_user_id(f"{user_id}-"))
+        #delete_thread.start()
 
         delete_query = """
             DELETE FROM users

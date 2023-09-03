@@ -1,46 +1,68 @@
 #!/usr/bin/python3
 
+import json
 import os
 import sys
 import logging
 import requests
+from modules.chatbot.chatgpt_reponse import ChatGPTResponse
 
+from modules.database_initializer import DatabaseInitializer
+from modules.goals.goal_retriever import UserGoal
+from modules.goals.user_retriever import UserHandler
+from modules.messaging.send_message import MessageSender
 
 class GoalReminderCron:
-    def __init__(self):
-        self.base_url = "http://localhost:5000"
+    def __init__(self, database_initializer):
+        self.database_initializer = database_initializer
 
     def retrieve_user(self, user_id):
-        url = f"{self.base_url}/api/user/retrieve_user"
-        data = {"user_id": user_id}
-        response = requests.post(url, json=data)
-        response.raise_for_status()
-        return response.json().get('user_info')
+
+        user_handler = UserHandler(self.database_initializer)
+        result = user_handler.get_user(user_id=user_id)
+
+        # Parse the JSON string into a Python dictionary
+        result = json.loads(result)
+
+        return result.get('user_info')
+    
 
     def retrieve_goal(self, user_id, goal_id):
-        url = f"{self.base_url}/api/user/retrieve_goal"
-        data = {"user_id": user_id, "goal_id": goal_id}
-        response = requests.post(url, json=data)
-        response.raise_for_status()
-        return response.json().get('goal_data')
+           
+        user_goal = UserGoal(self.database_initializer)
+        result = user_goal.get_user_goal(user_id=user_id, goal_id=goal_id)    
+        # Parse the JSON string into a Python dictionary
+        result = json.loads(result)
+
+        return result.get('goal_data')
 
     def generate_message(self, goal_data):
-        url = f"{self.base_url}/api/chat/generate_message"
+        
         template_message = f"Did you do your {goal_data['title']}?"
-        payload = {"template_message": template_message}
-        response = requests.post(url, json=payload)
-        response.raise_for_status()
-        return response.json().get('user_message')
+        # Initialize ChatGPTResponse with credentials file
+        chatgpt = ChatGPTResponse('config.json')
+
+        # Generate a response using ChatGPT
+        prompt_message = f"Rephrase this question:{template_message}"
+        response_max_tokens=30
+        response = chatgpt.generate_user_message(prompt_message=prompt_message, response_max_tokens=response_max_tokens)
+
+        # Parse the JSON string into a Python dictionary
+        result = json.loads(response)
+
+        return result.get('user_message')
 
     def send_message(self, user, message, goal, contact_choice):
-        url = f"{self.base_url}/api/send_message"
-        data = {
-            "recipient": user['phone'],
-            "message": message + "\nGoal: " + goal,
-            "type": contact_choice.lower()
-        }
-        response = requests.post(url, json=data)
-        response.raise_for_status()
+        
+        recipient = user['phone']
+        message = message + "\nGoal: " + goal
+        message_type = contact_choice.lower()
+
+        # Create an instance of MessageSender
+        message_sender = MessageSender()
+        # Call the send_message method to handle message sending
+        response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
+
         return response
 
     def main(self, args):
@@ -66,5 +88,8 @@ class GoalReminderCron:
             logging.error(f'Script encountered an error: {str(e)} + User ID: + {user_id}')
 
 if __name__ == '__main__':
-    goal_reminder_cron = GoalReminderCron()
+    # Initialize the database connection using the configuration from 'config.json'
+    database_initializer = DatabaseInitializer('config.json')
+
+    goal_reminder_cron = GoalReminderCron(database_initializer=database_initializer)
     goal_reminder_cron.main(sys.argv)

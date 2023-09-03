@@ -25,17 +25,14 @@ class UserRegistration:
             cursor = database_connection.cursor() 
 
             # Check if a record with the provided phone_number or email exists
-            cursor.execute("SELECT id FROM users WHERE phone_number = %s OR email = %s;", (phone, email))
+            cursor.execute("SELECT id, phone_number, email FROM users WHERE phone_number = %s OR email = %s;", (phone, email))
             existing_record = cursor.fetchone()
 
             if existing_record:
-                # Record with the provided phone_number or email already exists; update it
-                update_query = """
-                    UPDATE users
-                    SET name = %s, phone_number = %s, email = %s, password_hash = %s
-                    WHERE id = %s;
-                """
-                cursor.execute(update_query, (name, phone, email, generate_password_hash(password), existing_record[0]))
+                if existing_record[1] == phone:
+                    return jsonify({'message': 'The phone number is taken'}), 400
+                else:
+                    return jsonify({'message': 'The email is taken'}), 400    
             else:
                 # No existing record found; insert a new one
                 insert_query = "INSERT INTO users (name, phone_number, email, password_hash) VALUES (%s, %s, %s, %s);"

@@ -1,5 +1,4 @@
 import json
-from flask import jsonify
 import openai
 
 class ChatGPTResponse:
@@ -10,13 +9,6 @@ class ChatGPTResponse:
         with open(self.credentials_file_path, "r") as config_file:
             config = json.load(config_file)
         return config
-    
-    def remove_last_line_without_full_stop(self, bot_response):
-        lines = bot_response.split('\n')
-        # Check if the last line doesn't end with a full stop
-        if lines and not lines[-1].strip().endswith('.'):
-            lines.pop()  # Remove the last line
-        return '\n'.join(lines)
     
     def generate_analysis_report(self, prompt_message, response_max_tokens):
         credentials = self.get_credentials()
@@ -34,15 +26,13 @@ class ChatGPTResponse:
 
             # Extract the generated response from ChatGPT
             bot_response = response['choices'][0]['message']['content']
-            
-            # Remove the last line if it does not end with a full stop
-            bot_response = self.remove_last_line_without_full_stop(bot_response)
 
-            return jsonify({'message': 'Response generated successfully', 'bot_response': bot_response})
+
+            return json.dumps({'message': 'Response generated successfully', 'bot_response': bot_response})
 
         except Exception as e:
-            #return jsonify({'message': 'Error generating chatgpt response', 'error': str(e)}), 500
-            return jsonify({'message': str(e), 'error': str(e)}), 500 # For testing only
+            #return json.dumps({'message': 'Error generating chatgpt response', 'error': str(e)}), 500
+            return json.dumps({'message': str(e), 'error': str(e)}), 500 # For testing only
 
     def generate_user_message(self, prompt_message, response_max_tokens):
         credentials = self.get_credentials()
@@ -68,10 +58,10 @@ class ChatGPTResponse:
             # Extract the generated response from ChatGPT
             bot_response = response['choices'][0]['message']['content']
 
-            return jsonify({'message': 'User message generated successfully', 'user_message': bot_response})
+            return json.dumps({'message': 'User message generated successfully', 'user_message': bot_response})
 
         except Exception as e:
-            return jsonify({'message': str(e), 'error': str(e)}), 500  # For testing only
+            return json.dumps({'message': str(e), 'error': str(e)}), 500  # For testing only
         
     
     def chat_with_user(self, user_input, response_max_tokens):
@@ -114,9 +104,9 @@ class ChatGPTResponse:
             # Extract the generated response from ChatGPT
             bot_response = response['choices'][0]['message']['content']
 
-            return jsonify({'message': 'Chat message generated successfully', 'bot_response': bot_response})
+            return json.dumps({'message': 'Chat message generated successfully', 'bot_response': bot_response})
 
         except Exception as e:
-            return jsonify({'message': str(e), 'error': str(e)})
+            return json.dumps({'message': str(e), 'error': str(e)})
 
 

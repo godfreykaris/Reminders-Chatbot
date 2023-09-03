@@ -1,16 +1,13 @@
-from flask import jsonify, request
+import json
 
 class UserGoalData:
     def __init__(self, database_initializer):
         self.database_initializer = database_initializer
 
-    def get_user_goal_data(self):
-        data = request.get_json()
-        user_id = int(data.get('user_id'))
-        goal_id = int(data.get('goal_id'))
-
+    def get_user_goal_data(self, user_id, goal_id):
+        
         if not user_id or not goal_id:
-            return jsonify({'message': 'Invalid input data'}), 400
+            return json.dumps({'message': 'Invalid input data', 'status': 400})
 
         try:
             database_connection = self.database_initializer.get_database_connection()
@@ -49,14 +46,14 @@ class UserGoalData:
             if len(goal_entries) > 0:
                 
                 # Return the list of goal entries as JSON
-                return jsonify({'message': 'Goals retrieved successfully', 'goal_data_entries': goal_entries})
+                return json.dumps({'message': 'Goals retrieved successfully', 'goal_data_entries': goal_entries, 'status': 200})
             else:
-                return jsonify({'message': 'Goals not found'}), 404
+                return json.dumps({'message': 'Goals not found', 'status': 404})
 
 
         except Exception as e:
             # Handle database errors or other exceptions
-            return jsonify({'message': str(e), 'error': str(e)}), 500
+            return json.dumps({'message': str(e), 'error': str(e), 'status': 500})
         finally:
             cursor.close()
             database_connection.close()

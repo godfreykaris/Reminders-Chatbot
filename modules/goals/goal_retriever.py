@@ -1,18 +1,14 @@
+import json
 import Levenshtein
-from flask import jsonify, request
-import traceback
 
 class UserGoal:
     def __init__(self, database_initializer):
         self.database_initializer = database_initializer
 
-    def get_user_goal(self):
-        data = request.get_json()
-        user_id = int(data.get('user_id'))
-        goal_id = int(data.get('goal_id'))
-
+    def get_user_goal(self, user_id, goal_id):
+        
         if not user_id or not goal_id:
-            return jsonify({'message': 'Invalid input data'}), 400
+            return json.dumps({'message': 'Invalid input data'}), 400
 
         try:
             database_connection = self.database_initializer.get_database_connection()
@@ -29,13 +25,13 @@ class UserGoal:
                     'description': user_goal[1],
                     'contact_choice': user_goal[2],
                 }
-                return jsonify({'message': 'Goal retrieved successfully', 'goal_data': goal_data})
+                return json.dumps({'message': 'Goal retrieved successfully', 'goal_data': goal_data, 'status': 200})
             else:
-                return jsonify({'message': 'Goal not found'}), 404
+                return json.dumps({'message': 'Goal not found', 'status': 404})
 
         except Exception as e:
             # Handle database errors or other exceptions
-            return jsonify({'message': str(e), 'error': str(e)}), 500
+            return json.dumps({'message': str(e), 'error': str(e), 'status': 500})
         finally:
             cursor.close()
             database_connection.close()
@@ -43,7 +39,7 @@ class UserGoal:
     def get_user_goals(self, user_id):
         
         if not user_id :
-            return jsonify({'message': 'Invalid user id'}), 400
+            return json.dumps({'message': 'Invalid user id'}), 400
 
         try:
             user_id = int(user_id)
@@ -68,14 +64,13 @@ class UserGoal:
                     # Append the goal entry to the list
                     goals_titles.append(goal_data)
             
-                return jsonify({'message': 'Goal retrieved successfully', 'goals_titles': goals_titles, 'status': 200})
+                return json.dumps({'message': 'Goal retrieved successfully', 'goals_titles': goals_titles, 'status': 200})
             else:
-                return jsonify({'message': 'Goals not retrieved', 'status': 404})
+                return json.dumps({'message': 'Goals not retrieved', 'status': 404})
 
         except Exception as e:
-            traceback.print_exc()
             # Handle database errors or other exceptions
-            return jsonify({'message': str(e), 'error': str(e), 'status': 500})
+            return json.dumps({'message': str(e), 'error': str(e), 'status': 500})
         finally:
             cursor.close()
             database_connection.close()
