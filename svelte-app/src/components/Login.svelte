@@ -4,11 +4,24 @@
   import { onMount } from 'svelte';
   import { Circle2 } from 'svelte-loading-spinners';
 
+  import ForgotPassword from './ForgotPassword.svelte';
+
+
   let isLoading = false;
 
   let username = '';
   let password = '';
   let message = ''; // Initialize response message variable
+
+  let is_forgot_password_modal_open = false;
+
+  function handle_forgot_password_click(){
+    is_forgot_password_modal_open = true;
+  }
+
+  function handle_close_modal(){
+    is_forgot_password_modal_open = false;
+  }
 
 
   // Function to handle login
@@ -88,29 +101,77 @@ h1 {
       font-size: 14px;
       margin-top: 4px;
   }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1;
+    overflow: auto;
+  }
+
+  /* Modal content styles */
+  .modal-content {
+    position: relative;
+    margin: 15% auto; /* Center the modal vertically */
+    width: 60%;
+    max-width: 400px; /* Limit the modal width */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle elevation effect */
+    border-radius: 8px;
+  }
+
+  /* Close button styles */
+  .modal-content button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
 </style>
+
+{#if is_forgot_password_modal_open}
+    <div class="modal">
+      <div class="modal-content">
+        <button on:click={handle_close_modal}>&times;</button>
+        <ForgotPassword/>
+      </div>
+    </div>
+{/if}
+
 
 <main>
   <div class="center-container">
-    <button on:click={() => push('/')}>Home</button> 
-      <h1>LOGIN</h1>
+    <button on:click={() => push('/')}>Home</button>
+    <h1>LOGIN</h1>
     <!-- Display the message if it's not empty -->
-      {#if message}
-        <p class='error-message'>{message}</p>
-      {/if}
-      {#if isLoading}
-          <Circle2 size="64" />
-      {/if}
-      <form on:submit|preventDefault={handleLogin}> 
-        <label for="username">Email/Phone</label>
-        <input type="text" id="username" bind:value={username} />
-    
-        <label for="password">Password</label>
-        <input type="password" id="password" bind:value={password} />
-        <br>
-        <button type="submit">Login</button>
-      </form>
-  </div>
-  
+    {#if message}
+      <p class='error-message'>{message}</p>
+    {/if}
+    {#if isLoading}
+      <Circle2 size="64" />
+    {/if}    
+
+    <form on:submit|preventDefault={handleLogin}>
+      <label for="username">Email/Phone</label>
+      <input type="text" id="username" bind:value={username} />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" bind:value={password} />
+      <br>
+      <button type="submit">Login</button>
+
+      <br/>
+      <!-- svelte-ignore a11y-invalid-attribute -->
+      <button on:click={handle_forgot_password_click}>Forgot Password</button>
+    </form>    
+  </div>  
 </main>
 

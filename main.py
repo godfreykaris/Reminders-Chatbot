@@ -5,14 +5,26 @@ import os
 import threading
 import logging
 
+import string
+import random
+
+import pytz
+import requests
+import psycopg2.extras  # If psycopg2 is a third-party library
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+from flask_mail import Mail, Message
+
 # Third-Party Library Imports
+from werkzeug.security import check_password_hash, generate_password_hash
 from flask import Flask, jsonify, request, render_template
 from flask_login import LoginManager, UserMixin, current_user, login_required,  login_user, logout_user
 from flask_wtf.csrf import CSRFProtect,  generate_csrf
 from twilio.twiml.messaging_response import MessagingResponse
-import pytz
-import requests
-import psycopg2.extras  # If psycopg2 is a third-party library
+
 
 # Custom Module Imports
 from modules.database_initializer import DatabaseInitializer
@@ -56,6 +68,16 @@ app.static_folder = static_folder_path
 
 # Initialize the database connection using the configuration from 'config.json'
 database_initializer = DatabaseInitializer('config.json')
+
+#configure flask-mail for sending emails
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Use your email provider's SMTP server
+app.config['MAIL_PORT'] = 587  # Port for SMTP (587 for TLS)
+app.config['MAIL_USE_TLS'] = True  # Use TLS encryption
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # Your email address
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # Your email password
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')  # Default sender for emails
+
+mail = Mail(app)
 
 @app.route('/')
 def index():
@@ -140,6 +162,162 @@ def login():
     except Exception as e:
          # Handle any exceptions that may occur and return as JSON
         return jsonify({'error': str(e)}), 500
+    
+    
+#generate new password for user
+def generate_password(length):
+    #definne character set for password generation
+    lowercase = string.ascii_lowercase
+    uppercase = string.ascii_uppercase
+    digits = string.digits
+    special_chars = "!@#$%^&*()_+=-[]{}|:;<>,.?/~"
+    
+    #ensure that password length is atleast 8 chars
+    if length < 8:
+        length = 8
+    
+    #combine character sets
+    all_chars = lowercase + uppercase + digits + special_chars
+    
+    #generate password with random chars
+    password = ''.join(random.choice(all_chars) for _ in range(length))
+    
+    return password
+
+#send new password to user
+def send_password_reset_email(email, new_password, user_name):
+    try:
+        # Create a message object for the email
+        msg = Message('Password Reset Instructions', recipients=[email])  # Use the provided email parameter
+        
+        # Customize the email content with the temporary password
+        msg.body = f'Dear {user_name},\n\nWe recently received a request to reset the password for your Reminder App account. To help ensure the security of your account, we have generated a temporary password for you to use:\n\nTemporary Password: {new_password}\n\nPlease follow these steps to reset your password:\n\n1. Go to the Reminder App login page \n2. Enter email, then the temporary password in their respective fields. \n\nFor security reasons, we recommend that you change your password immediately after logging in. If you did not request a password reset or have any concerns about the security of your account, please contact our support team immediately.\n\nThank you for choosing Reminder App for your needs. We apologize for any inconvenience this may have caused and appreciate your understanding as we work to ensure the security of your account.\n\nBest regards,\n Reminder App'
+        
+        # Send the email
+        mail.send(msg)
+    
+    except Exception as e:
+        return jsonify({'error': 'Failed to send password reset email'}), 500
+
+
+#reset password
+@app.route('/api/reset_password', methods=['POST'])
+def reset_password():
+    try:
+        data = request.get_json()
+        email = data.get('email')
+        phone_number = data.get('phone_number')
+        
+        # Check if email and phone_number are provided
+        if not email or not phone_number:
+            return jsonify({'message': 'Invalid input data'}), 400
+        
+        logging.info(f"Received data: email={email}, phone_number={phone_number}")
+        
+        # Get a database connection using a context manager
+        with database_initializer.get_database_connection() as conn:
+            with conn.cursor() as cursor:
+                # Check if the user exists in the database
+                user_query = """
+                    SELECT name
+                    FROM users
+                    WHERE email = %s
+                    AND phone_number = %s
+                """
+                cursor.execute(user_query, (email, phone_number,))
+                user = cursor.fetchone()
+                
+                if not user:
+                    return jsonify({'message': 'User not found!'}), 404
+                
+                user_name = user[0]
+                
+                # Generate a new password
+                new_password = generate_password(8)
+                new_pswd_hash = generate_password_hash(new_password)
+                
+                # Update the user's password in the database
+                update_password = """
+                    UPDATE users
+                    SET password_hash = %s
+                    WHERE email = %s
+                    AND phone_number = %s
+                """
+                cursor.execute(update_password, (new_pswd_hash, email, phone_number))
+                
+                # Commit the transaction
+                conn.commit()
+                
+                if cursor.rowcount == 0:
+                    return jsonify({'message': 'Failed to update password'}), 500
+                
+                # Send password reset email
+                try:
+                    send_password_reset_email(email, new_password, user_name)
+                except Exception as e:
+                    logging.error(f"Failed to send password reset email: {str(e)}")
+                    return jsonify({'error': 'Failed to send password reset email'}), 500
+                
+                return jsonify({'message': 'Password reset was successful'}), 200
+    
+    except psycopg2.Error as e:
+        return jsonify({'error': 'Network error while trying to reset password'}), 500
+
+
+#route to change user password
+@app.route('/api/change_password', methods=['POST'])
+def change_password():
+    try:
+        data = request.get_json()
+        email = data.get('email')
+        phone_number = data.get('phone_number')
+        old_password = data.get('oldPassword')
+        new_password = data.get('newPassword')
+        
+        if not phone_number or not old_password or not new_password:
+            return jsonify(message="Something went wrong")
+
+        with database_initializer.get_database_connection() as conn:
+            # Query to find the user with the given email and phone number
+            user_query = """
+                SELECT password_hash
+                FROM users
+                WHERE email = %s
+                AND phone_number = %s
+            """
+            
+            with conn.cursor() as cursor:
+                cursor.execute(user_query, (email, phone_number))
+                user = cursor.fetchone()
+                
+                if user is None:
+                    return jsonify(message="User not found!"), 404
+                
+                stored_password_hash = user[0]
+
+                # Verify the old password
+                if not check_password_hash(stored_password_hash, old_password):
+                    return jsonify(message="Incorrect old password"), 401
+
+                # Generate a new password hash
+                new_password_hash = generate_password_hash(new_password)
+                
+                # Update the password in the database
+                update_password = """
+                    UPDATE users
+                    SET password_hash = %s
+                    WHERE email = %s
+                    AND phone_number = %s
+                """
+                
+                cursor.execute(update_password, (new_password_hash, email, phone_number,))
+                conn.commit()  # Commit the transaction
+            
+        return jsonify(message="Password change was successful"), 200
+    
+    except psycopg2.Error as e:
+        logging.error(f"Error while trying to change password: {str(e)}")
+        return jsonify(error="Network error while trying to change password"), 500
     
 # Define a route to a user
 @app.route('/api/user/retrieve_user', methods=['POST'])
