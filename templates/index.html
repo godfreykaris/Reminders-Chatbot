@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    
+    <title>Reminders App</title>
+    <!-- Include CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='build/bundle.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='global.css') }}">
+</head>
+<body>
+    <div id="svelte-app"></div>
+    <!-- Include JavaScript -->
+    <script src="{{ url_for('static', filename='build/bundle.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,1005 @@
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:31:22 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1483', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ752b5f1b3eec94b76322497ee5a88a7c', 'Twilio-Request-Duration': '0.105', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:32:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1949', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ0f1837426180089a3d1f9c2236705b19', 'Twilio-Request-Duration': '0.134', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:33:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1856', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQe0bdcba3be617e1244c12c8ac83da4e1', 'Twilio-Request-Duration': '0.113', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:34:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2038', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ31e57960e5c411b13b1b8365d06b6dd4', 'Twilio-Request-Duration': '0.092', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:35:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1957', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQc7553c53641d81f7ca460b84ca395341', 'Twilio-Request-Duration': '0.086', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:36:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1786', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQa84cae1797aff56c08914990ca994a66', 'Twilio-Request-Duration': '0.097', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:37:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1831', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ35244db6a8bb0ae67e5696d615eff831', 'Twilio-Request-Duration': '0.076', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:38:15 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '827', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQf470e27c1c1c519edfb56c6e3ae75760', 'Twilio-Request-Duration': '0.081', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully. User ID:6{"message": "Whatsapp sent successfully"}
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:38:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1967', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ61d7d84d92bfe1b537373d3d174a2f1e', 'Twilio-Request-Duration': '0.100', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:39:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1819', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ6bf93b3297401f9e9ce0d0a567802f87', 'Twilio-Request-Duration': '0.132', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:40:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1781', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ88fa0137de35657b82304ce905ffd066', 'Twilio-Request-Duration': '0.082', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:41:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1943', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ4a71d3bd62ec67fb88b3831c382f22e7', 'Twilio-Request-Duration': '0.111', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:42:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1955', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQd2975bd1fe095bfcb0da80d1b021a431', 'Twilio-Request-Duration': '0.099', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:43:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1846', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ377d30eceaf8a6c0977b7c69cb3921ff', 'Twilio-Request-Duration': '0.102', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:44:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1874', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ21a03764fe6fba4bcef188f59bcbea08', 'Twilio-Request-Duration': '0.087', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:46:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2161', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ897ca65cc7f335ac95c4af6c4dd70867', 'Twilio-Request-Duration': '0.084', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:46:47 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1893', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ023b3aa2dc89f44f3229625b855323b0', 'Twilio-Request-Duration': '0.088', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:47:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1918', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQa7f908d62f38f8f666187d6c636bb16e', 'Twilio-Request-Duration': '0.094', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:48:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2046', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQd904fb53b2ca9554212b4e72ee04c043', 'Twilio-Request-Duration': '0.121', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:49:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1532', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ031c7f81edea61f2b8ec595335ae6752', 'Twilio-Request-Duration': '0.085', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:50:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1980', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQcce0816fc4d8a589b6eaaa33af05a76b', 'Twilio-Request-Duration': '0.085', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:51:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1859', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQa60bd854b2b92dd4aec5e6ae54f92dca', 'Twilio-Request-Duration': '0.096', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:52:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1787', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ9a61045bd0fcc5fce004febadff43527', 'Twilio-Request-Duration': '0.109', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:53:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1790', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ75e1f0c3eef47a057c5c58ddd063e8de', 'Twilio-Request-Duration': '0.096', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:54:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1892', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ0940cc1d0c1bac0435b1f038f08e7684', 'Twilio-Request-Duration': '0.097', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:55:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1921', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ1d09d9291657b70b3243a2c6a3d980dc', 'Twilio-Request-Duration': '0.092', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:56:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1914', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQbb1a0a5a0f0c2f170c754f1f6eff4d8c', 'Twilio-Request-Duration': '0.106', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:57:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1709', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQfaab77faf6462224830fbeac2b9abac6', 'Twilio-Request-Duration': '0.082', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:58:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2049', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ8cf911d9de3b52b529d56ccebb8e6e4b', 'Twilio-Request-Duration': '0.124', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 14:59:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2039', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ0b630c30e3909c1ecdbe6c56135b700b', 'Twilio-Request-Duration': '0.116', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:00:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2080', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQe578d8a8aacaa0e185a6817f444a3e00', 'Twilio-Request-Duration': '0.113', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:01:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2089', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ52f17c218536f8be252900523516eefc', 'Twilio-Request-Duration': '0.110', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:02:36 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2021', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQebe92bfd28c1ab72a92a5226d6b62980', 'Twilio-Request-Duration': '0.093', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:03:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1997', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQf72f4b5cad2255654c0beebb6bb6ef5f', 'Twilio-Request-Duration': '0.112', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:04:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1553', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ3e16cb3303300eebebacb05928addce2', 'Twilio-Request-Duration': '0.094', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:05:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1876', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ871d1c4757996946e0e6f4ef0e0368be', 'Twilio-Request-Duration': '0.140', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:06:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1681', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQc6788b3cd7f0ea79114256e27d3b4d37', 'Twilio-Request-Duration': '0.118', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:07:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1725', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ9e661e38f3f3da7d64768d20ad79e8df', 'Twilio-Request-Duration': '0.101', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:08:36 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2047', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ9a3ead0d4d7781ddf5ebb2a2a2648661', 'Twilio-Request-Duration': '0.089', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:09:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1668', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ768d45020f9df11fa30ae5b071d77515', 'Twilio-Request-Duration': '0.091', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:10:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1840', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQd575c102c6a472173445621d6745b523', 'Twilio-Request-Duration': '0.137', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:11:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1508', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ19041a5edd478da1ac59a1a41f21d6e6', 'Twilio-Request-Duration': '0.091', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:12:36 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1905', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQf610696ec0f76c57333ab698bf48e317', 'Twilio-Request-Duration': '0.099', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:13:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1545', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ8ec33f0a49b1f0e8bc64c11e02045628', 'Twilio-Request-Duration': '0.088', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:14:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1857', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQc7897cf3a74a5e34d1c9fb9925068603', 'Twilio-Request-Duration': '0.084', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:15:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1749', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ20121fe3d0d84fb6c03c47fcb819eb30', 'Twilio-Request-Duration': '0.093', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:16:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1881', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ6e837432ee9aa4ecea14de7efece4e35', 'Twilio-Request-Duration': '0.100', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:17:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1876', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQa33fb4cf5c4c536bf47f12b8311ebedb', 'Twilio-Request-Duration': '0.089', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:18:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2141', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ1525b50bfb33f691671f53a4e3878d9c', 'Twilio-Request-Duration': '0.101', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:19:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1711', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQc0cb9edbf0a3b5f51804e134cb489da5', 'Twilio-Request-Duration': '0.093', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:20:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1984', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ82f8dd155c06e9a1de86edc8b7bd920d', 'Twilio-Request-Duration': '0.120', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:21:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1864', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQba41aa44f362ae817008ff783bebdd71', 'Twilio-Request-Duration': '0.092', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:22:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1721', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ6fbc4162e1528f2cbda5b204adfb12a2', 'Twilio-Request-Duration': '0.124', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:23:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1806', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ1bdb8e29800ad514d853fc5a2efc83ac', 'Twilio-Request-Duration': '0.097', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:24:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1634', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQb087ed2e22a0bccf786d55042c55b495', 'Twilio-Request-Duration': '0.103', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:25:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1563', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ30083a15eeb1bd0ebdfb9ffe598bf916', 'Twilio-Request-Duration': '0.176', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:26:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1641', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ414a6f61c7f11ea17ce4c966804b9c5c', 'Twilio-Request-Duration': '0.095', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:27:30 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1879', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ451b8d46b7a8eb148f7aa34446fc8268', 'Twilio-Request-Duration': '0.100', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:28:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1735', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ332ebb3284233fe2aaf14ea9dda23e52', 'Twilio-Request-Duration': '0.121', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:29:22 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1532', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQc3b2766a4ac22b623e5a488e3cffc39d', 'Twilio-Request-Duration': '0.133', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:30:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1286', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQd77950838954ce2e272a99cd5f0b7db0', 'Twilio-Request-Duration': '0.249', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:31:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1683', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ557daa1634aaced5d26a6c3fcc1b8b3e', 'Twilio-Request-Duration': '0.120', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:32:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1722', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ7b1d71443ed16c28f00ed16f4271d438', 'Twilio-Request-Duration': '0.097', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:33:27 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1727', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQc803005cb079423e56e354f4a049c53f', 'Twilio-Request-Duration': '0.111', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 15:34:34 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1839', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ2fdd252a4728dde7dee0abaef6e4c128', 'Twilio-Request-Duration': '0.095', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 20:56:16 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '832', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ2bd1928cfa57d52f3626d2f7a8187bb5', 'Twilio-Request-Duration': '0.104', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully. User ID:6{"message": "Whatsapp sent successfully"}
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0bccd8de515300cb847c910c28be6806/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Mon, 04 Sep 2023 20:56:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1849', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQcc2b25dc03016f653394893f9c8ffc0a', 'Twilio-Request-Duration': '0.088', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
