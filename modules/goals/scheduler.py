@@ -1,11 +1,9 @@
 # Import necessary libraries
 import os
 import pytz
-from flask import jsonify, request
-from crontab import CronTab
-from datetime import datetime, timedelta
+from flask import jsonify
+from datetime import datetime
 
-import requests
 
 from modules.goals.cron_manager import CronJobManager
 
@@ -23,11 +21,21 @@ class Scheduler:
 
             # Create an instance of CronJobManager
             cron_manager = CronJobManager(user=True)
-        
-            local_time = pytz.timezone(task_data["timezone"]).localize(datetime.now())
-            utc_time = local_time.astimezone(pytz.utc)
 
-            scheduled_time = utc_time.replace(hour=task_data["scheduled_time"]["hour"], minute=task_data["scheduled_time"]["minute"])
+            # Assuming `task_data` contains the user's timezone and scheduled time information
+            user_timezone = pytz.timezone(task_data["timezone"])
+
+            # Get the current server time in UTC
+            server_time = datetime.now(pytz.utc)
+
+            # Convert the server time to the user's timezone
+            user_time = server_time.astimezone(user_timezone)
+
+            # Set the desired scheduled time in the user's timezone
+            scheduled_time = user_time.replace(hour=task_data["scheduled_time"]["hour"], minute=task_data["scheduled_time"]["minute"], second=0)
+
+            # Convert the scheduled time back to UTC
+            scheduled_time = scheduled_time.astimezone(pytz.utc)
 
             current_dir = os.path.dirname(os.path.abspath(__file__))
             script_path = os.path.abspath(os.path.join(current_dir, '..', '..', self.script_name))

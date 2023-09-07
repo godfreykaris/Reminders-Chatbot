@@ -5,8 +5,8 @@
     "db_user": "postgres",
     "db_password": "HTBcLanDNjGvlG05",
 
-    "twilio_sid": "AC0bccd8de515300cb847c910c28be6806",
-    "twilio_token": "fa1f34b4d9661b116f5df13e53137426",
+    "twilio_sid": "AC9ff34d4b8418e223481bba263c052dd4",
+    "twilio_token": "468c95a4e3581ca18c6fe1b44e8e49b1",
     "from_phone_number_sms": "+17066003537",
     "from_phone_number_whatsapp": "+14155238886",
 
