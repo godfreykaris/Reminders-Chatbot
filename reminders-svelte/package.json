@@ -1,0 +1,32 @@
+{
+  "name": "reminders-svelte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "autoprefixer": "^10.4.14",
+    "flowbite-svelte-blocks": "github:shinokada/flowbite-svelte-blocks",
+    "flowbite-svelte-icons": "^0.4.3",
+    "postcss": "^8.4.24",
+    "postcss-load-config": "^4.0.1",
+    "svelte": "^4.0.5",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "flowbite": "^1.8.1",
+    "flowbite-svelte": "^0.44.8",
+    "pdf-lib": "^1.17.1",
+    "svelte-loading-spinners": "^0.3.4",
+    "svelte-spa-router": "^3.3.0",
+    "svelte-tel-input": "^3.3.6",
+    "tailwind-merge": "^1.14.0"
+  }
+}

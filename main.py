@@ -66,7 +66,7 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=60)
 
 
 # Set the static folder relative to the project directory
-static_folder_path = os.path.join(os.path.dirname(__file__), 'svelte-app', 'public')
+static_folder_path = os.path.join(os.path.dirname(__file__), 'reminders-svelte', 'public')
 #static_folder_path = os.path.join(os.path.dirname(__file__), 'templates', 'static')
 app.static_folder = static_folder_path
 
@@ -159,7 +159,7 @@ def login():
         user_authenticator = UserLogin(database_initializer=database_initializer)
         # Call the login_user method to handle user login
         result = user_authenticator.login_user()
-        status = result.status_code
+        status = result.json['status']
         if status == 200:
             response_data = result.json
             # Access specific properties from the response
@@ -167,8 +167,9 @@ def login():
             # Use Flask-Login's login_user function to set the current_user
             login_user(User(int(user_id)))
 
-        return result
+        return result, status
     except Exception as e:
+        print(str(e))
          # Handle any exceptions that may occur and return as JSON
         return jsonify({'error': str(e)}), 500
 
@@ -359,7 +360,8 @@ def send_user_message():
     return response
 
 # Define a route for getting user messages
-@app.route('/webhook', methods=['POST'])
+@app.route('/api/webhook', methods=['POST'])
+@csrf.exempt 
 def webhook():
     # Get the incoming message from Twilio
     incoming_message = request.form['Body'].lower()
@@ -368,7 +370,11 @@ def webhook():
     # Handle incoming messages
     user_message_response = MessagingResponse()
 
-
+    message_type = "whatsapp"
+    recipient = from_phone
+     # Create an instance of MessageSender
+    message_sender = MessageSender()
+   
     # Validate message format
     parts = incoming_message.split('=')
     
@@ -378,44 +384,48 @@ def webhook():
         report = parts[1]
     else:
         # Tell the user to use the correct format
-        user_message_response.message("Your message should be as follows: \nGoal = Report. \nExample: Yoga = Yes i did my yoga")
-        return str(user_message_response)
+        message = "Your message should be as follows: \nGoal = Report. \nExample: Yoga = Yes i did my yoga"
+        response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
+        return response
 
     if not report or not goal or report.isspace() or report == "":
         # Tell the user to use the correct format
-        user_message_response.message("Your message should be as follows: \nGoal = Report. \nExample: Yoga = Yes i did my yoga")
-        return str(user_message_response)
+        message = "Your message should be as follows: \nGoal = Report. \nExample: Yoga = Yes i did my yoga"
+        response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
+        return response        
+        
     
     # Retrieve a user by the phone number
     user_retriever = UserHandler(database_initializer=database_initializer);
     response = user_retriever.get_user_by_phone(from_phone)
 
-    response_data = response.json
-    status_code = response_data.get('status', None)
+    response_data = json.loads(response)
+    status_code = response_data['status']
 
     # Check the response
     if status_code == 200:
         # Successful response
-        user_data = response.json['user_info']
+        user_data = response_data['user_info']
     else:
-        user_message_response.message("We are experiencing a problem retrieving your details. \nPlease contact suport.")
-        return str(user_message_response)
+        message = "We are experiencing a problem retrieving your details. \nPlease contact suport."
+        response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
+        return response
     
     # Retrieve the user goals
     goals_retriever = UserGoal(database_initializer=database_initializer)
     response = goals_retriever.get_user_goals(user_data['id'])
 
-    response_data = response.json
-    status_code = response_data.get('status', None)
+    response_data = json.loads(response)
+    status_code = response_data['status']
 
-    print(response_data)
     # Check the response
     if status_code == 200:
         # Successful response
-        goals_data = response.json['goals_titles']
+        goals_data = response_data['goals_titles']
     else:
-        user_message_response.message("We are experiencing a problem retrieving your details. \nPlease contact suport.")
-        return str(user_message_response)
+        message = "We are experiencing a problem retrieving your details. \nPlease contact suport."
+        response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
+        return response
     
 
     # Check if the goal provided by the user is valid
@@ -423,51 +433,36 @@ def webhook():
 
     if not goal_matched:
        # Inform the user that the goal is invalid
-       user_message_response.message(f"The goal: '{goal}' does not exist in your goals. \nCorrect format: Goal = Report. \nExample: Yoga = Yes i did my yoga")
-       return str(user_message_response)
+       message = f"The goal: '{goal}' does not exist in your goals. \nCorrect format: Goal = Report. \nExample: Yoga = Yes i did my yoga"
+       response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
+       return response
+    
+            
+    # Initialize ChatGPTResponse with credentials file
+    chatgpt = ChatGPTResponse('config.json')
+
+    # Generate a response based on user input
+    user_input_string = "Goal:" + goal + ", Report:" + report
+    response_max_tokens = 3000 # Adjust max_tokens as needed
+    response = chatgpt.chat_with_user(user_input=user_input_string, response_max_tokens=response_max_tokens)
+
+    response_data = json.loads(response)
+    status_code = response_data['status']
+
+    if status_code == 200:            
+        bot_message = response_data['bot_response']        
+
+    else:
+        bot_message = "I am experiencing an error. I am not able to chat with you currently"
+    
+    # Inform the user that the goal is invalid
+    message = bot_message
+    response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
 
     # Store the data
     goal_id = goal_matched['id']
-
-    # Define the goal data
-    goal_data = {
-        "user_id": user_data['id'],  # Replace with the actual user ID
-        "goal_id": goal_id, 
-        "message": report, 
-    }
-
-    store_goal_data = StoreGoalData(database_initializer=database_initializer)
-    store_data_url = f"{app.config['BASE_URL']}/api/store_feedback"
-
-    data_thread = threading.Thread(target=store_goal_data.store_user_data_request, args=(store_data_url, goal_data, ))
-    
-    # Generate a response from ChatGPT
-    chatgpt_url = f"{app.config['BASE_URL']}/api/chat/chat_with_user"
-   
-    # JSON payload
-    chatgpt_payload = {"user_input": "Goal:" + goal + ", Report:" + report}
-
-    try:
-        # Send a POST request to your chat_with_user API
-        chatgpt_response = requests.post(chatgpt_url, json=chatgpt_payload)
-        
-        if chatgpt_response.status_code == 200:
-            # If the request to the chat_with_user API was successful, get the bot's response
-            chatgpt_data = chatgpt_response.json()
-            bot_message = chatgpt_data.get('bot_response')
-
-            # Send the bot's response back to the user via Twilio
-            user_message_response.message(bot_message)
-        else:
-            # Handle any errors that may occur during the API request
-            user_message_response.message("An error occurred while processing your request.")
-    
-    except Exception as e:
-        # Handle exceptions that may occur during the API request
-        user_message_response.message("An error occurred while processing your request.")
-    
-    # Start the thread
-    data_thread.start()
+    store_goal_data = StoreGoalData(database_initializer=database_initializer)   
+    store_goal_data.store_user_goal_data(report, goal_id, user_data['id'])
 
     return str(user_message_response)
     
@@ -850,7 +845,7 @@ def edit_goal():
 def delete_goal():
     data = request.get_json()
     goal_id = data.get('id')
-    
+
     if not isinstance(goal_id, int) or goal_id <= 0:
         return jsonify(message="Invalid goal ID"), 400
     
