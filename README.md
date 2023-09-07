@@ -44,7 +44,7 @@ These packages are needed to run the system's cron jobs.
 1. Clone the Reminders repository from GitHub:
 
    ```shell
-   git clone https://github.com/your-username/reminders.git
+   git clone https://github.com/godfreykaris/Reminders-Chatbot.git
 # Project Name
 
 2. **Change into the project directory and install the necessary dependencies:**
