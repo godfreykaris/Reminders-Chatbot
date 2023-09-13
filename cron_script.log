@@ -1898,3 +1898,229 @@ INFO:twilio.http_client:-- END Twilio API Request --
 INFO:twilio.http_client:Response Status Code: 201
 INFO:twilio.http_client:Response Headers: {'Date': 'Thu, 07 Sep 2023 18:06:29 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1699', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ19aceaba9cef0ef6ee945d9c7e6868ff', 'Twilio-Request-Duration': '0.092', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
 INFO:root:Script executed successfully for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC9ff34d4b8418e223481bba263c052dd4/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Fri, 08 Sep 2023 20:56:17 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '827', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ43df6e85cbff4b55a1b8b96ad54278d1', 'Twilio-Request-Duration': '0.104', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully. User ID:6{"message": "Whatsapp sent successfully"}
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC9ff34d4b8418e223481bba263c052dd4/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Fri, 08 Sep 2023 20:56:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1783', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ9cdf89a7b0819be20ba9867fdcba4c18', 'Twilio-Request-Duration': '0.081', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 6
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:twilio.http_client:-- BEGIN Twilio API Request --
+INFO:twilio.http_client:POST Request: https://api.twilio.com/2010-04-01/Accounts/AC9ff34d4b8418e223481bba263c052dd4/Messages.json
+INFO:twilio.http_client:Headers:
+INFO:twilio.http_client:User-Agent : twilio-python/8.7.0 (Linux x86_64) Python/3.10.12
+INFO:twilio.http_client:X-Twilio-Client : python-8.7.0
+INFO:twilio.http_client:Accept-Charset : utf-8
+INFO:twilio.http_client:Content-Type : application/x-www-form-urlencoded
+INFO:twilio.http_client:Accept : application/json
+INFO:twilio.http_client:-- END Twilio API Request --
+INFO:twilio.http_client:Response Status Code: 201
+INFO:twilio.http_client:Response Headers: {'Date': 'Sat, 09 Sep 2023 14:19:16 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '826', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQ00aacb09d009c69a55089f02ca1a8c09', 'Twilio-Request-Duration': '0.104', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+INFO:root:Script executed successfully. User ID:6{"message": "Whatsapp sent successfully"}
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Script encountered an error: the JSON object must be str, bytes or bytearray, not tuple for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 6
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment for user 9
+ERROR:root:Script encountered an error: local variable 'cursor' referenced before assignment + User ID: + 9

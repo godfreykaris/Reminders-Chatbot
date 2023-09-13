@@ -5,7 +5,7 @@ import os
 import sys
 import logging
 import requests
-from modules.chatbot.chatgpt_reponse import ChatGPTResponse
+from modules.chatbot.chatgpt_response import ChatGPTResponse
 
 from modules.database_initializer import DatabaseInitializer
 from modules.goals.goal_retriever import UserGoal

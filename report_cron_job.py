@@ -2,7 +2,7 @@ import json
 import os
 import logging
 import sys
-from modules.chatbot.chatgpt_reponse import ChatGPTResponse
+from modules.chatbot.chatgpt_response import ChatGPTResponse
 from modules.database_initializer import DatabaseInitializer
 from modules.goals.goal_data_retriever import UserGoalData
 
