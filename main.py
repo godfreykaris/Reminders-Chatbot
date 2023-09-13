@@ -34,7 +34,7 @@ from modules.goals.goal_retriever import UserGoal
 from modules.goals.cron_manager import CronJobManager
 from modules.goals.user_retriever import UserHandler
 from modules.goals.scheduler import GoalScheduler, ReportScheduler
-from modules.chatbot.chatgpt_reponse import ChatGPTResponse
+from modules.chatbot.chatgpt_response import ChatGPTResponse
 from report_cron_job import ReportGenerator
 
 
@@ -437,27 +437,45 @@ def webhook():
        response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
        return response
     
-            
     # Initialize ChatGPTResponse with credentials file
     chatgpt = ChatGPTResponse('config.json')
 
-    # Generate a response based on user input
-    user_input_string = "Goal:" + goal + ", Report:" + report
-    response_max_tokens = 3000 # Adjust max_tokens as needed
-    response = chatgpt.chat_with_user(user_input=user_input_string, response_max_tokens=response_max_tokens)
+    # Fetch the conversation history from the database
+    history = chatgpt.fetch_history_from_database(database_initializer, user_data['id'], goal_matched['id'])  # Implement this function to retrieve the history from your database
+
+    if not history or history is None:
+        history = []
+    else:    
+        history = json.loads(history)
+        
+    # Generate a response based on user input and history
+    user_input_string = "Goal:" + goal_matched['title'] + ", Report:" + report
+    
+  
+    # Append the new message to the conversation history
+    history.append({"role": "user", "content": user_input_string}) 
+
+    response_max_tokens = 256
+    response = chatgpt.chat_with_user(history=history, response_max_tokens=response_max_tokens)
 
     response_data = json.loads(response)
     status_code = response_data['status']
 
-    if status_code == 200:            
-        bot_message = response_data['bot_response']        
+    if status_code == 200:
+        bot_message = response_data['bot_response']
 
+        # Append the new message to the conversation history
+        history.append({"role": "assistant", "content": bot_message})
     else:
         bot_message = "I am experiencing an error. I am not able to chat with you currently"
     
     # Inform the user that the goal is invalid
     message = bot_message
     response = message_sender.send_message(recipient=recipient, message=message, message_type=message_type)
+
+     # Convert the updated history back to a JSON string
+    history_json = json.dumps(history)
+    chatgpt.store_history_to_database(database_initializer, user_data['id'], goal_matched['id'], history_json)
 
     # Store the data
     goal_id = goal_matched['id']
