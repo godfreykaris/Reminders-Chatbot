@@ -359,18 +359,11 @@ def send_user_message():
 
     return response
 
-# Define a route for getting user messages
-@app.route('/api/webhook', methods=['POST'])
-@csrf.exempt 
-def webhook():
-    # Get the incoming message from Twilio
-    incoming_message = request.form['Body'].lower()
-    from_phone_parts = request.form.get('From', '').strip().split(':')
-    from_phone = from_phone_parts[1]
+def handle_user_message(message_type, from_phone, incoming_message):
+
     # Handle incoming messages
     user_message_response = MessagingResponse()
 
-    message_type = "whatsapp"
     recipient = from_phone
      # Create an instance of MessageSender
     message_sender = MessageSender()
@@ -483,6 +476,27 @@ def webhook():
     store_goal_data.store_user_goal_data(report, goal_id, user_data['id'])
 
     return str(user_message_response)
+
+# Define a route for getting user messages
+@app.route('/api/webhook/whatsapp', methods=['POST'])
+@csrf.exempt 
+def whatsapp_webhook():
+    # Get the incoming message from Twilio
+    incoming_message = request.form['Body'].lower()
+    from_phone_parts = request.form.get('From', '').strip().split(':')
+    from_phone = from_phone_parts[1]
+
+    return handle_user_message('whatsapp', from_phone, incoming_message)
+
+@app.route('/api/webhook/sms', methods=['POST'])
+@csrf.exempt 
+def sms_webhook():
+    # Get the incoming message from Twilio
+    incoming_message = request.form['Body'].lower()
+    from_phone_parts = request.form.get('From', '').strip().split(':')
+    from_phone = from_phone_parts[1]
+
+    return handle_user_message('sms', from_phone, incoming_message)
     
 # Define a route for scheduling user goals
 @app.route('/api/schedule_goal', methods=['POST'])

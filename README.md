@@ -114,11 +114,17 @@ To add a goal, follow these steps:
 
 ### Receiving Reminder Messages
 
+The Reminders application sends reminder messages through WhatsApp to help you stay on track with your goals. In a real-world deployment, the owner of the app should use purchased phone numbers from Twilio, and WhatsApp sandboxes are only used for testing purposes.
+
 The Reminders application uses the WhatsApp sandbox to send and receive messages via WhatsApp. To join the WhatsApp sandbox, send the message join pet-meat to the WhatsApp sandbox number: +14155238886.
 
-Please note that SMS functionality has been implemented throughout the system, but it may not be successfully tested due to issues with receiving SMS from Twilio's test SMS service.
+It also uses sms service but may incur charges.
 
-The Reminders application sends reminder messages through WhatsApp to help you stay on track with your goals. In a real-world deployment, the client would use purchased phone numbers from Twilio, and WhatsApp sandboxes are only used for testing purposes.
+Make sure you configure webhooks for both sms and whatsapp correctly like:
+
+THE_APP'S_BASE_URL/api/webhook/whatsapp
+THE_APP'S_BASE_URL/api/webhook/sms
+
 
 ### Viewing AI-Generated Reports
 
