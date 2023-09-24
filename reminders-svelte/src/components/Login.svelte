@@ -3,7 +3,7 @@
 
   import { onMount } from 'svelte';
   import { Circle2 } from 'svelte-loading-spinners';
-
+  import { EyeOutline, EyeSlashOutline } from 'flowbite-svelte-icons'
   import { Section, Register } from 'flowbite-svelte-blocks';
   import { Button, Modal,  Label, Input } from 'flowbite-svelte';
 
@@ -12,6 +12,7 @@
   let forgotPasswordModal = false;
 
   let isLoading = false;
+  let showPassword = false;
 
   let username = '';
   let password = '';
@@ -67,6 +68,13 @@
             // Reset isLoading state when the component is mounted
             isLoading = false;
           });
+        
+
+   
+  function togglePasswordVisibility() {
+        showPassword = !showPassword;
+      }
+
 </script>
 
 <style>
@@ -107,10 +115,19 @@
           <Input class="border-1 border-black" type="text" name="username" bind:value={username} placeholder="email or phone number" required />
         </Label>
         <Label class="space-y-2">
-          <span>Your password</span>
-          <!-- Bind 'password' variable to the value of the input -->
-          <Input  class="border-1 border-black" type="password" name="password" bind:value={password} placeholder="•••••" required />
-          
+            <strong><span>Password</span></strong>
+            <div class="relative">
+                <Input type={showPassword ? 'text' : 'password'} name="password" bind:value={password} placeholder="•••••" class="border-1 border-black focus:ring-blue-500 focus:border-blue-500" required />            
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
+                <span on:click={togglePasswordVisibility} class="cursor-pointer absolute inset-y-0 right-0 flex items-center px-2">
+                    {#if showPassword}
+                        <EyeOutline/>
+                    {:else}
+                        <EyeSlashOutline/>
+                    {/if}
+                </span>
+            </div>
         </Label>
         <div class="flex items-start">
           <a href={null} on:click={() => (forgotPasswordModal = true)} class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Forgot password?</a>

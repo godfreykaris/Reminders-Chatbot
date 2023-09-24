@@ -2,6 +2,7 @@
     // @ts-ignore
     import { push } from "svelte-spa-router";
     import { Circle2 } from 'svelte-loading-spinners';
+    import { EyeOutline, EyeSlashOutline } from 'flowbite-svelte-icons'
     import { Button, Label, Input } from 'flowbite-svelte';
 
     let email = '';
@@ -15,7 +16,9 @@
     let errorMessage = ''; // Initialize response message variable
     let successMessage = ''; // Initialize response message variable
     
-  
+    let showPassword = false;
+    let showNewPassword = false;
+    let showConfirmNewPassword = false;
 
     async function changePassword() {
 
@@ -91,6 +94,18 @@
             const phone_regex = /[0-9]/;
             return phone_regex.test(phone);
         }
+
+        function togglePasswordVisibility() {
+            showPassword = !showPassword;
+        }
+
+        function toggleNewPasswordVisibility() {
+            showNewPassword = !showNewPassword;
+        }
+        function toggleConfirmNewPasswordVisibility() {
+            showConfirmNewPassword = !showConfirmNewPassword;
+        }
+        
     </script>
     
     
@@ -124,16 +139,51 @@
         <Input type="tel" name="phone" bind:value={phone_number} placeholder="(123) 456-7890" class="border-1 border-black" required />
       </Label>
       <Label class="space-y-2">
-        <span>Old Password</span>
-        <Input type="password" name="password" bind:value={oldPassword} placeholder="•••••" class="border-1 border-black" required />
+          <strong><span>Old Password</span></strong>
+          <div class="relative">
+              <Input type={showPassword ? 'text' : 'password'} name="password" bind:value={oldPassword} placeholder="•••••" class="border-1 border-black focus:ring-blue-500 focus:border-blue-500" required />            
+              <!-- svelte-ignore a11y-click-events-have-key-events -->
+              <!-- svelte-ignore a11y-no-static-element-interactions -->
+              <span on:click={togglePasswordVisibility} class="cursor-pointer absolute inset-y-0 right-0 flex items-center px-2">
+                  {#if showPassword}
+                      <EyeOutline/>
+                  {:else}
+                      <EyeSlashOutline/>
+                  {/if}
+              </span>
+          </div>
       </Label>
+
       <Label class="space-y-2">
-        <span>New Password</span>
-        <Input type="password" name="password" bind:value={newPassword} placeholder="•••••" class="border-1 border-black" required />
+        <strong><span>New Password</span></strong>
+        <div class="relative">
+          <Input type={showNewPassword ? 'text' : 'password'} name="password" bind:value={newPassword} placeholder="•••••" class="border-1 border-black focus:ring-blue-500 focus:border-blue-500" required />
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-static-element-interactions -->
+          <span on:click={toggleNewPasswordVisibility} class="cursor-pointer absolute inset-y-0 right-0 flex items-center px-2">
+              {#if showNewPassword}
+                  <EyeOutline/>
+              {:else}
+                  <EyeSlashOutline/>
+              {/if}
+          </span>
+        </div>
       </Label>
+
       <Label class="space-y-2">
-        <span>Confirm New Password</span>
-        <Input type="password" name="confirm-password" bind:value={confirmNewPassword} placeholder="•••••" class="border-1 border-black" required />
+        <strong><span>Confirm New Password</span></strong>
+        <div class="relative">
+          <Input type={showConfirmNewPassword ? 'text' : 'password'} name="confirm-password" bind:value={confirmNewPassword} placeholder="•••••" class="border-1 border-black focus:ring-blue-500 focus:border-blue-500" required />
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-static-element-interactions -->
+          <span on:click={toggleConfirmNewPasswordVisibility} class="cursor-pointer absolute inset-y-0 right-0 flex items-center px-2">
+              {#if showConfirmNewPassword}
+                  <EyeOutline/>
+              {:else}
+                  <EyeSlashOutline/>
+              {/if}
+          </span>
+        </div>
       </Label>
       <!-- Show loading indicator while isLoading is true -->
       {#if isLoading}
