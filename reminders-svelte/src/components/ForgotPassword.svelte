@@ -1,10 +1,19 @@
-<script>
+<script lang="ts">
     import { Circle2 } from 'svelte-loading-spinners';
     // @ts-ignore
     import { createEventDispatcher } from 'svelte';
 
     // @ts-ignore
     import { Button, Checkbox, Label, Input } from 'flowbite-svelte';
+
+    import PhoneInput from './PhoneInput.svelte'
+
+    import type {
+          E164Number,
+
+      } from 'svelte-tel-input/types';
+
+    let value: E164Number | null;
 
     let email = '';
     let phone_number = '';
@@ -22,10 +31,12 @@
             return;
         }
 
-        if (!validate_phone(phone_number)) {
+        phone_number = value.toString();
+     
+        if (!phone_number) {
             alert('Invalid phone number. Please enter a valid phone number.');
             return;
-        }        
+        }
 
         isLoading = true;
 
@@ -42,15 +53,15 @@
             body: JSON.stringify({ email, phone_number }),
         });
 
-        
-
-        // @ts-ignore
-        const data = response.json()
+      
 
         if (response.ok) {
             alert('A new password has been sent to your email, check your inbox');
+            success_message = "Password reset successful.";
+            error_message = '';
         } else {
             error_message = 'Password reset failed, please try again later';
+            success_message = '';
         }
 
         isLoading = false;
@@ -62,15 +73,25 @@
         return email_regex.test(email);
     }
 
-    function validate_phone(phone) {
-        const phone_regex = /[0-9]/;
-        return phone_regex.test(phone);
-    }
 </script>
 
+<style>
+  
+  .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 4px;
+  }
 
+  .success-message {
+      color: green;
+      font-size: 14px;
+      margin-top: 4px;
+  }
 
-<form class="flex flex-col space-y-6" action="#">
+</style>
+
+<form class="flex flex-col space-y-6 " action="#">
   <h3 class="text-xl font-medium text-gray-900 dark:text-white p-0">Reminders  </h3>
   <h3 class="text-xl font-medium text-gray-900 dark:text-white p-0">Reset Password</h3>
   <!-- Show loading indicator while isLoading is true -->
@@ -90,9 +111,7 @@
     <span>Email</span>
     <Input type="email" name="email" bind:value={email} placeholder="name@company.com" class="border-1 border-black" required />
   </Label>
-  <Label class="space-y-2">
-    <span>Phone</span>
-    <Input type="tel" name="phone" bind:value={phone_number} placeholder="(123) 456-7890" class="border-1 border-black" required />
-  </Label>
+  <!-- Include the PhoneInput component -->
+  <PhoneInput bind:value/>
   <Button on:click={resetPassword} class="w-full1">Reset Password</Button>
 </form>

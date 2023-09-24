@@ -1,9 +1,18 @@
-<script>
+<script lang="ts">
     // @ts-ignore
     import { push } from "svelte-spa-router";
     import { Circle2 } from 'svelte-loading-spinners';
     import { EyeOutline, EyeSlashOutline } from 'flowbite-svelte-icons'
     import { Button, Label, Input } from 'flowbite-svelte';
+
+    import PhoneInput from '../PhoneInput.svelte'
+
+    import type {
+          E164Number,
+
+      } from 'svelte-tel-input/types';
+
+    let value: E164Number | null;
 
     let email = '';
     let phone_number = '';
@@ -37,18 +46,23 @@
             return;
         }
 
-        if (!validate_phone(phone_number)) {
+        phone_number = value.toString();
+
+
+        if (!phone_number) {
             alert('Invalid phone number. Please enter a valid phone number.');
             return;
         }
 
         isLoading = true;
 
+
         const formData = {
           phone_number,
           email,
           oldPassword,
           newPassword,
+          confirmNewPassword,
         }
         
         // @ts-ignore
@@ -90,10 +104,6 @@
             return email_regex.test(email);
         }
 
-        function validate_phone(phone){
-            const phone_regex = /[0-9]/;
-            return phone_regex.test(phone);
-        }
 
         function togglePasswordVisibility() {
             showPassword = !showPassword;
@@ -105,7 +115,7 @@
         function toggleConfirmNewPasswordVisibility() {
             showConfirmNewPassword = !showConfirmNewPassword;
         }
-        
+
     </script>
     
     
@@ -134,10 +144,10 @@
         <span>Email</span>
         <Input type="email" name="email" bind:value={email} placeholder="name@company.com" class="border-1 border-black" required />
       </Label>
-      <Label class="space-y-2">
-        <span>Phone</span>
-        <Input type="tel" name="phone" bind:value={phone_number} placeholder="(123) 456-7890" class="border-1 border-black" required />
-      </Label>
+
+      <!-- Include the PhoneInput component -->
+      <PhoneInput bind:value/>
+
       <Label class="space-y-2">
           <strong><span>Old Password</span></strong>
           <div class="relative">
@@ -198,5 +208,5 @@
       {:else if successMessage}
         <p class="success-message">{successMessage}</p>
       {/if}
-      <Button on:click={changePassword} class="w-full1">Update Profile</Button>
+      <Button on:click={changePassword} class="w-full1">Change Password</Button>
     </form>

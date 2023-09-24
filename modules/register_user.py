@@ -13,9 +13,12 @@ class UserRegistration:
         phone = data.get('phone')
         email = data.get('email')
         password = data.get('password')
+        confirmPassword = data.get('confirmPassword')
 
-        if not phone or not email or not password or not name:
+        if not phone or not email or not password or not name or not confirmPassword:
             return jsonify({'message': 'Invalid input data'}), 400
+        elif password != confirmPassword:
+            return jsonify({'message': 'The passwords you entered do not match.'}), 400
 
 
         try:

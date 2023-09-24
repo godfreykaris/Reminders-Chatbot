@@ -169,10 +169,11 @@
         } 
         else 
         {
-          error_message = "An error occurred trying to fetch goals";
+          const data = await response.json();
+
+          error_message = data.message || "An error occurred trying to fetch report. Please contact support.";
           success_message = '';
           isLoading = false;
-          location.reload();
         }
   
         
@@ -184,12 +185,12 @@
 
 <main>
         
+    <h3>View Goal Analysis Report</h3>
+    
     {#if error_message !== null}
         <p class="error-message">{error_message}</p>
     {/if}
 
-    <h3>View Goal Analysis Report</h3>
-    
     {#if isLoading}
         <div class="center-container">
             <Circle2 size="64" />

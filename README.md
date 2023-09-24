@@ -220,6 +220,49 @@ To test the Reminders application locally, follow these steps:
 4. Install the necessary dependencies using `pip install -r requirements.txt`.
 5. Start the application using `python3 main.py`.
 
+## Nginx - Example server configuration
+```bash
+
+
+upstream flaskreminders {
+    server 127.0.0.1:8000;
+}
+
+# Default server configuration
+#
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+
+	root /var/www/html;
+
+	# Add index.php to the list if you are using PHP
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name _;
+
+	
+	location /api {
+                    proxy_connect_timeout 900s;
+                    proxy_pass http://flaskreminders/api;
+                }
+
+        location /static/ {
+                alias /home/ubuntu/Reminders-Chatbot/reminders-svelte/public/;
+                try_files $uri $uri/ =404;
+                 # Other optional directives
+        }
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                proxy_pass http://flaskreminders;
+		            
+        }
+	
+```
+
 ## User Interface Customization
 
 The Reminders application's user interface can be customized by modifying the HTML, CSS, and JavaScript files located in the templates and static directories.

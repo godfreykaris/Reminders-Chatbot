@@ -119,7 +119,6 @@ def user_data():
         result = user_handler.get_user(user_id=current_user.id)
         # Parse the JSON string into a Python dictionary
         result = json.loads(result)
-        print(result)
         return result, 200
     
     except Exception as e:
@@ -283,9 +282,12 @@ def change_password():
         phone_number = data.get('phone_number')
         old_password = data.get('oldPassword')
         new_password = data.get('newPassword')
+        confirm_password = data.get('confirmPassword')
         
-        if not phone_number or not old_password or not new_password:
-            return jsonify(message="Something went wrong")
+        if not phone_number or not old_password or not new_password or not confirm_password:
+            return jsonify({'message': 'Invalid input data'}), 400
+        elif new_password != confirm_password:
+            return jsonify({'message': 'The confirmed password does not match the new password.'}), 400
 
         with database_initializer.get_database_connection() as conn:
             # Query to find the user with the given email and phone number
@@ -691,7 +693,7 @@ def get_report(id):
         if report:
             return report, 200
         else:
-            return jsonify(message="Data not found"), 404
+            return jsonify(message="An error occured or your data was not found. If you have already recorded some data contact support."), 404
 
     except psycopg2.Error as e:
         logging.error(f'Script encountered an error: {str(e)} for user {user_id}')
