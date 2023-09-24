@@ -2564,3 +2564,52 @@ ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable +
 ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
 INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
 ERROR:root:Script encountered an error: the JSON object must be str, bytes or bytearray, not tuple for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
+ERROR:root:Script encountered an error: the JSON object must be str, bytes or bytearray, not tuple for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
+ERROR:root:Script encountered an error: the JSON object must be str, bytes or bytearray, not tuple for user 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: 'NoneType' object is not subscriptable + User ID: + 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: the JSON object must be str, bytes or bytearray, not tuple + User ID: + 6
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Script encountered an error: the JSON object must be str, bytes or bytearray, not tuple + User ID: + 9
+ERROR:root:Script encountered an error: the JSON object must be str, bytes or bytearray, not tuple for user 9
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:06:29] "GET /api/get_goals HTTP/1.1" 200 -
+INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:06:31] "[35m[1mGET /api/get_report/104 HTTP/1.1[0m" 500 -
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:07:00] "[35m[1mGET /api/get_report/104 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/godfreykaris/Documents/Reminders/modules/chatbot/chatgpt_response.py', reloading
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
+INFO:root:Script executed successfully for user 37
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:12:02] "[33mGET /api/get_report/104 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/godfreykaris/Documents/Reminders/main.py', reloading
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
+INFO:root:Script executed successfully for user 37
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:24:50] "[33mGET /api/get_report/104 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/godfreykaris/Documents/Reminders/main.py', reloading
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+INFO:openai:error_code=billing_not_active error_message='Your account is not active, please check your billing details on our website.' error_param=None error_type=billing_not_active message='OpenAI API error received' stream_error=False
+INFO:root:Script executed successfully for user 37
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:30:44] "[33mGET /api/get_report/104 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:56] "GET /api/user_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:56] "GET /api/user_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:57] "GET /static/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:57] "GET /api/user_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/godfreykaris/Documents/Reminders/main.py', reloading

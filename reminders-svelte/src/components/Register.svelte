@@ -41,6 +41,17 @@
     error_message = "";
     isLoading = true;
     try {
+
+      phone = value.toString();
+
+      if( !phone || !name || !email || !password || confirmPassword)
+      {
+        error_message = "Please fill in all the details.";
+        success_message = "";
+        isLoading = false;
+        return;
+      }
+
       // @ts-ignore
       let csrf = document.getElementsByName("csrf-token")[0].content;
       const response = await fetch(`/api/register`, {
@@ -55,6 +66,7 @@
           name: name,          
           email: email,
           password: password,
+          confirmPassword: confirmPassword
         }),
       });
 

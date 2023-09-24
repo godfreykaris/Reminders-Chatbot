@@ -52,6 +52,7 @@ class ReportGenerator:
             # Generate the report
             report = self.generate_report(user, goal, goal_data)
 
+            
             # Send the report
             self.send_report(user, report, goal['contact_choice'].lower())
 

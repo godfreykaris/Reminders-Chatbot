@@ -16,13 +16,24 @@
 
   let username = '';
   let password = '';
-  let message = ''; // Initialize response message variable
-
+  let errorMessage = ''; // Initialize response error message variable
+  let successMessage = '';
   
   // Function to handle login
   async function handleLogin() {
     isLoading = true;
+    errorMessage = '';
+    successMessage = '';
     try {
+
+      if(!username || !password)
+      {
+        errorMessage = "Please fill in all the details.";
+        successMessage = '';
+        isLoading = false;
+        return;
+      }
+
       // @ts-ignore
       let csrf = document.getElementsByName("csrf-token")[0].content;
       const response = await fetch('/api/login', {
@@ -40,17 +51,20 @@
 
       if (response.status === 200) {
         // Authentication successful
-        message = data.message;
+        successMessage  = data.message;
+        errorMessage = '';
         isLoading = false;
         push('/dashboard') // Redirect to the dashboard
       } else if (response.status === 401) 
       {
         // Authentication failed
-        message = 'Authentication failed. Please check your credentials.';
+        errorMessage = 'Authentication failed. Please check your credentials.';
+        successMessage = ''
         isLoading = false;
       } 
       else {
-        message = "An error occurred while trying to log in. Please try again.";
+        errorMessage = "An error occurred while trying to log in. Please try again.";
+        successMessage = ''
         isLoading = false;
       }
       
@@ -58,8 +72,9 @@
     catch (error) 
      {
       console.error('Error:', error);
-      message = 'An error occurred while trying to log in. Please try again.';
-      alert(message)
+      errorMessage = 'An error occurred while trying to log in. Please try again.';
+      successMessage = '';
+      alert(errorMessage);
       location.reload();
       isLoading = false;
     }
@@ -85,10 +100,16 @@
       margin-top: 4px;
   }
 
+  .success-message {
+      color: green;
+      font-size: 14px;
+      margin-top: 4px;
+  }
+
 </style>
 
 
-<Modal bind:open={forgotPasswordModal} size="xs" autoclose={false} class="w-full max-w-sm">
+<Modal bind:open={forgotPasswordModal} size="xs" autoclose={false} class="w-full h-2 max-w-sm">
   <ForgotPassword />
 </Modal>
   
@@ -99,8 +120,10 @@
         <h3 class="text-xl font-medium text-gray-900 dark:text-white p-0">Reminders</h3>
         <h3 class="text-xl font-medium text-gray-900 dark:text-white p-0">Login</h3>
         
-        {#if message}
-          <p class='error-message'>{message}</p>
+        {#if errorMessage}
+          <p class='error-message'>{errorMessage}</p>
+        {:else if successMessage}
+          <p class='success-message'>{successMessage}</p>
         {/if}
 
         {#if isLoading}

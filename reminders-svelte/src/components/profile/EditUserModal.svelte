@@ -1,12 +1,16 @@
 <!-- EditUserModal.svelte -->
-<script>
+<script lang='ts'>
   import { Circle2 } from 'svelte-loading-spinners';
   import {push} from 'svelte-spa-router';
   import { createEventDispatcher } from 'svelte';
 
   import { Button, Label, Input } from 'flowbite-svelte';
+
+
   export let editedUser;
   let newUser = editedUser;
+
+  
   let isLoading = false;
   let errorMessage = '';
   let successMessage = '';
@@ -22,6 +26,7 @@
     errorMessage = '';
     successMessage = '';
 
+    
     // Validate and edit the user's details
     if (!newUser.name || !newUser.email || !newUser.phone) {
       errorMessage = 'Please fill in all fields.';
@@ -104,7 +109,7 @@
   </Label>
   <Label class="space-y-2">
     <span>Phone</span>
-    <Input type="tel" name="phone" bind:value={newUser.phone} placeholder="(123) 456-7890" class="border-1 border-black" required />
+    <Input type="text" name="phone" bind:value={newUser.phone} placeholder="+1123456789" class="border-1 border-black" required />
   </Label>
   <Button on:click={editUser} class="w-full1">Update Profile</Button>
 </form>

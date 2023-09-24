@@ -34,11 +34,12 @@ class ChatGPTResponse:
             bot_response = response['choices'][0]['message']['content']
 
 
-            return json.dumps({'message': 'Response generated successfully', 'bot_response': bot_response})
+            return json.dumps({'message': 'Response generated successfully', 'bot_response': bot_response, 'status': 200})
 
         except Exception as e:
-            #return json.dumps({'message': 'Error generating chatgpt response', 'error': str(e)}), 500
-            return json.dumps({'message': str(e), 'error': str(e)}), 500 # For testing only
+            print(str(e))
+            return json.dumps({'message': 'Error generating chatgpt response', 'error': str(e), 'status': 500})
+            # return json.dumps({'message': str(e), 'error': str(e), 'status': 500})# For testing only
 
     def generate_user_message(self, prompt_message, response_max_tokens):
         if self.credentials:
@@ -70,7 +71,9 @@ class ChatGPTResponse:
             return json.dumps({'message': 'User message generated successfully', 'user_message': bot_response})
 
         except Exception as e:
-            return json.dumps({'message': str(e), 'error': str(e)}), 500  # For testing only
+            return json.dumps({'message': 'Error generating user response', 'error': str(e), 'status': 500})
+
+            # return json.dumps({'message': str(e), 'error': str(e)}, 'status': 500}) # For testing only
         
     
     def chat_with_user(self, history, response_max_tokens):
@@ -110,8 +113,9 @@ class ChatGPTResponse:
             return json.dumps({'message': 'Chat message generated successfully', 'bot_response': bot_response, 'status': 200})
 
         except Exception as e:
-            print(str(e))
-            return json.dumps({'message': str(e), 'error': str(e), 'status': 500})
+            return json.dumps({'message': 'Error generating chatgpt while chatich with user response', 'error': str(e), 'status': 500})
+
+            # return json.dumps({'message': str(e), 'error': str(e), 'status': 500})
 
     def fetch_history_from_database(self, database_initializer, user_id, goal_id):
 
