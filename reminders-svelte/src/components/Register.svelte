@@ -44,7 +44,7 @@
 
       phone = value.toString();
 
-      if( !phone || !name || !email || !password || confirmPassword)
+      if( !phone || !name || !email || !password || !confirmPassword)
       {
         error_message = "Please fill in all the details.";
         success_message = "";

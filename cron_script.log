@@ -2613,3 +2613,5 @@ INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:57] "GET /static/index.css HTTP/1
 INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:57] "GET /api/user_data HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [24/Sep/2023 19:52:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 INFO:werkzeug: * Detected change in '/home/godfreykaris/Documents/Reminders/main.py', reloading
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
+ERROR:root:Credentials file found: /home/godfreykaris/Documents/Reminders/config.json
