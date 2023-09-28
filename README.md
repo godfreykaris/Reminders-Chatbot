@@ -170,36 +170,38 @@ The Reminders application uses Supabase as the database, consisting of the follo
 **Columns:**
 
 - `id` (Primary Key)
-- `created_at`
-- `email`
-- `phone_number`
-- `password_hash`
-- `updated_at`
-- `name`
+- `created_at`(timestamptz)
+- `email`(text)
+- `phone_number`(text)
+- `password_hash`(text)
+- `updated_at`(timestamptz)
+- `name`(text)
 
 ### `goals`
 
 **Columns:**
 
-- `id` (Primary Key)
-- `created_at`
-- `user_id` (Foreign Key)
-- `goal_title`
-- `goal_description`
-- `time_of_day`
-- `time_zone`
-- `contact_choice`
-- `report_frequency`
+- `id` (Primary Key)(int8)
+- `created_at`(timestamptz)
+- `user_id` (Foreign Key)(int8)
+- `goal_title`(varchar)
+- `goal_description`(varchar)
+- `time_of_day`(time)
+- `time_zone`(varchar)
+- `contact_choice`(varchar)
+- `report_frequency`(int)
+- `conversation_history`(text)
+- `history_updated_on`(text)
 
 ### `goal_data`
 
 **Columns:**
 
 - `id` (Primary Key)
-- `created_at`
-- `user_id` (Foreign Key)
-- `goal_id` (Foreign Key)
-- `feedback`
+- `created_at`(timestamptz)
+- `user_id` (Foreign Key)(int8)
+- `goal_id` (Foreign Key)(int8)
+- `feedback`(text)
 
 The `user_id` and `goal_id` columns in the `goal_data` table are foreign keys, and deletion of records is cascaded.
 
